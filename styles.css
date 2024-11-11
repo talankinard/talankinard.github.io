@@ -45,13 +45,14 @@ h1 {
     .about{
         display:flex;
         flex-wrap:wrap;
-        margin-right: 100px;
-        margin-left: 100px;
+        margin-right: 0px;
+        margin-left: 0px;
         justify-content: center;
         }
-       
+
      .about p {
-        width:50%;
+        text-indent: -50px;
+        width: 50%;
         text-align: center;
         margin: auto;
         line-height: 125%;
