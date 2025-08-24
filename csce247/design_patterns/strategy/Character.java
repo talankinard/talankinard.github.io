@@ -1,6 +1,6 @@
 package strategy;
 
-public abstract class Character 
+public abstract class Character  
 {
     private final String name = "";
     private WeaponBehavior weaponBehavior;
@@ -28,4 +28,14 @@ public abstract class Character
         return name;
     }
 
+    public void attack()
+    {
+        System.out.println((getRole()+" "+name+" "));
+        weaponBehavior.attack();
+    }
+
+    public String toString()
+    {
+        return getRole()+" "+name;
+    }
 }

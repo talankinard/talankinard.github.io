@@ -1,9 +1,9 @@
 package strategy;
 
-public abstract class WeaponBehavior 
+public interface WeaponBehavior 
 {
     //attack is a characteristic each weapon shares
     abstract void attack();
 
-    protected int speed;
+    public static final int speed = 0;
 }
