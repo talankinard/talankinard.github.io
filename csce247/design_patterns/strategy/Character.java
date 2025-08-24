@@ -8,12 +8,18 @@ public abstract class Character
     protected Character(String name)
     {
         this.name = name;
-        this.weaponBehavior = new WeaponNone(); //weapon none default nulll in this case
+        this.weaponBehavior = new WeaponNone(); 
+        /*
+            initilaize
+         */
     }
 
+    /*
+     * two abstracts to relay to children classes
+     */
     public abstract String getRole();
 
-     public abstract String[] asciiArt();
+    public abstract String[] asciiArt();
 
     public void setWeaponBehavior(WeaponBehavior weaponBehavior)
     {
@@ -36,7 +42,7 @@ public abstract class Character
         weaponBehavior.attack();
     }
 
-    public String toString()
+    public String toString() 
     {
         return getRole()+" "+name;
     }

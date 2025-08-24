@@ -13,12 +13,18 @@ public class Knight extends Character
     }
 
     public String[] asciiArt() 
-    { //symbols for each character
+    { 
         return new String[] { " __", "(--)" };
+        /*
+         * symbol for knight
+         */
     }
 
     public String toString() 
-    { //toString method
-        return String.join("\n", asciiArt()) + "\n" + getRole() + ": " + getName(); //break for the sumbols and printing of the art
+    { 
+        /*
+         * toString method with \n to break
+         */
+        return String.join("\n", asciiArt()) + "\n" + getRole() + ": " + getName(); 
     }
 }

@@ -1,7 +1,10 @@
 package strategy;
 
-public class King extends Character //extends as it is a child class
+public class King extends Character 
 {
+    /*
+     * extends from parent class
+     */
     public King(String name)
     {
         super(name);
@@ -13,6 +16,9 @@ public class King extends Character //extends as it is a child class
         return "Knight";
     }
 
+    /*
+     * king ascii art joint with the toString with a break to show hte symbol
+     */
     public String[] asciiArt() 
     {
         return new String[] 
