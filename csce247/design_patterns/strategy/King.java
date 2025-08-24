@@ -23,7 +23,7 @@ public class King extends Character
     {
         return new String[] 
         { 
-        "__//^^^\\__" 
+        "__/^^^\\__" 
         };
     }
 

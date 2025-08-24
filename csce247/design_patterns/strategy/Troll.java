@@ -16,7 +16,7 @@ public class Troll extends Character
     {
         return new String[] 
         { 
-        "//^\\" 
+        "/^\\" 
         };
     }
 
