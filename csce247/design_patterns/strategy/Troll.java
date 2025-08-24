@@ -11,4 +11,17 @@ public class Troll extends Character
     {
         return "Troll";
     }
+
+    public String[] asciiArt() 
+    {
+        return new String[] 
+        { 
+        "//^\\" 
+        };
+    }
+
+    public String toString() 
+    {
+        return String.join("\n", asciiArt()) + "\n" + getRole() + ": " + getName();
+    }
 }

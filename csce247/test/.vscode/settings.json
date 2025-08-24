@@ -4,4 +4,12 @@
     "java.project.referencedLibraries": [
         "lib/**/*.jar"
     ]
+
+  ,"code-runner.runInTerminal": true,
+  "code-runner.executorMap": {
+    "java": "cd \"$workspaceRoot\" && find strategy -name \"*.class\" -delete && javac strategy/*.java && java strategy.MedievalDriver"
+  }
+
+
 }
+

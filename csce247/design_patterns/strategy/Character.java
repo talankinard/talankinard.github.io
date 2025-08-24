@@ -2,7 +2,7 @@ package strategy;
 
 public abstract class Character  
 {
-    private final String name = "";
+    private final String name; //i accidentally had this initializing the variable twice before
     private WeaponBehavior weaponBehavior;
 
     protected Character(String name)
@@ -12,6 +12,8 @@ public abstract class Character
     }
 
     public abstract String getRole();
+
+     public abstract String[] asciiArt();
 
     public void setWeaponBehavior(WeaponBehavior weaponBehavior)
     {
@@ -38,4 +40,5 @@ public abstract class Character
     {
         return getRole()+" "+name;
     }
+
 }
