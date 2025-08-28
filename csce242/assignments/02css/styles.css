@@ -1,0 +1,76 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0B0C0E;
+
+}
+
+#content
+{
+    background: #1E90FF;
+    width:75%;  
+    margin:auto;
+    padding:1%; 
+    border-radius:5px;  
+}
+
+h1
+{
+    color: #B22222;
+    text-align: center;
+}
+
+h2
+{
+    color: #FFFFFF
+
+}
+
+h3
+{
+    color: #B22222; 
+}
+
+p
+{
+    color: #FFFFFF
+}
+
+.tablecontent 
+{
+    background: #FFFFFF;
+    width: 75%;
+    margin: auto;
+    padding: 1%; 
+    border-radius: 5px;
+}
+
+table 
+{
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+th, td 
+{
+    border: 1px solid #000000;
+    padding: 8px;
+    text-align: center;
+    color: black;
+}
+
+th 
+{
+    background-color: #B22222;
+    font-weight: bold;
+}
+
+/* pics */
+#spidermanpic 
+{
+    box-shadow: 7px 7px #B22222;
+}
+
+
