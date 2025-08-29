@@ -1,6 +1,6 @@
 package observer;
 
-public class Teacher 
+public class Knight 
 {
     
 }
