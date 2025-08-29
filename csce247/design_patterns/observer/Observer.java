@@ -1,5 +1,7 @@
 package observer;
 
-public class Observer {
-    
+public interface Observer 
+{
+    void update(boolean warning);
+    void update(int note);
 }
