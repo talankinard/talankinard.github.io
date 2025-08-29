@@ -1,12 +1,13 @@
 body
 {
+    margin: 0;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-image: url(images/sushi.jpg);
-    background-position: initial;
-    background-position-x: 50%;
-    background-position-y: 0%;
+
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
+    background-color: #000;                   /* fallback fill behind the image */
+    min-height: 100vh;  
     /*
     Background positioning
     */
@@ -48,3 +49,27 @@ body
     color: white;
 }
 
+@media only screen and (min-width: 768px) {
+
+    #content
+    { 
+        width: 70%; 
+    }
+    .columns
+    { 
+        display: flex; 
+    }
+    
+    /* Remove default borders for nav items on large screens */
+    #main-nav li, #main-nav li:first-child 
+    { 
+        border: none; 
+    }
+    
+    #main-nav a:hover 
+    {
+        background:#1C1C1C;
+        color:white;
+        border-bottom:1px solid white;
+    }
+}

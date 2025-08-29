@@ -2,12 +2,13 @@ body
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background: #006d77;
+    min-height: 100vh; /* background fills at least viewport height */
 }
 
 #content
 {
     background: #83c5be;
-    width:75%;  
+    width:90%;  
     margin:auto;
     padding:1%;   /* get text away from edge */
     border-radius:5px;  /* round corners */
@@ -40,7 +41,71 @@ h5
     text-align: center;
 }
 
-#assignments
+#main-header
 {
+    background-color: #006d77;
+    
+}
+
+.assignments 
+{
+    color: black;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.assignments h3 
+{
+    margin-bottom: 5px;
     text-align: center;
+}
+
+.assignments p 
+{
+    margin-bottom: 10px;
+
+}
+
+.assignments a 
+{
+    text-decoration: none;
+}
+
+.assignment-one
+{
+   width:25%;
+    margin:20px;
+    padding:15px 15px;
+    background-color: white;
+    border-radius: 10%;
+    background-color: #006d77;
+}
+
+.assignment-two
+{
+   width:25%;
+    margin:20px;
+    padding:15px 15px;
+    background-color: white;
+    border-radius: 10%;
+    background-color: #006d77;
+}
+
+.assignment-three
+{
+    width:25%;
+    margin:20px;
+    padding:15px 15px;
+    background-color: white;
+    border-radius: 10%;
+    background-color: #006d77;
+}
+
+img
+{
+     max-width: 100%;     /* image shrinsk with window */
+    height: auto;       
+    border: black;
+    border-radius: 5px;
 }
