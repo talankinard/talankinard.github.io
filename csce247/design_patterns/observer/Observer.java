@@ -2,6 +2,5 @@ package observer;
 
 public interface Observer 
 {
-    void update(boolean warning);
-    void update(int note);
+    void update(boolean warning, int note); //per uml
 }

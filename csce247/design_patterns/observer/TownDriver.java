@@ -20,13 +20,14 @@ public class TownDriver {
 		Observer teacher = new Teacher(watchman, greeter);
 		Observer knight = new Knight(watchman, greeter);
 		
+
 		while(true){
 			int notice = getNotice();
 			clear();
 
 			if(notice <= 2){
 				greeter.issueNotice(notice);
-			} else {
+			}else{
 				watchman.issueNotice(notice - 2);
 			}
             

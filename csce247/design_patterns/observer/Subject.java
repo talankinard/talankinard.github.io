@@ -20,4 +20,9 @@ public abstract class Subject
 
     public abstract void notifyObservers(int note);
 
+    public static void clear() 
+    { //basic clear method
+		System.out.print("\033[H\033[2J");
+	}
+
 }

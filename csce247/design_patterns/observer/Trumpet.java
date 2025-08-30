@@ -9,13 +9,14 @@ import javax.sound.sampled.Clip;
 public class Trumpet {
 
     public static void play(boolean warning, int num){
+
         for(int i=0; i < num; i++){
             honk(warning);
         }
     }
 
     private static void honk(boolean warning){
-        String fileName = "observer/sounds/";
+        String fileName = "/Users/talankinard/Desktop/VSCode/talankinard.github.io/csce247/design_patterns/observer/sounds/"; //had to manually put path to get sounds
 
         if(warning){
             fileName += "trumpet.wav";
