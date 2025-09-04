@@ -61,14 +61,16 @@ nav.main-nav
 {
     display: flex;
     gap: 20px;
-    flex-wrap: nowrap;
     align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .block
 {
+    align-items: flex-start;
     display: flex;
-    gap: 20px;
+    gap:20px;
+    flex-wrap:nowrap;
 }
 
 .block h3
@@ -81,6 +83,7 @@ nav.main-nav
 {
     margin: 0;
     color: white;
+    overflow-wrap: anywhere;
 }
 
 .block aside
@@ -90,14 +93,16 @@ nav.main-nav
 
 .block .content 
 {
-  flex: 1 1 auto;         /* <-- gives the text real width so it doesn't squish */
+    flex: 1 1 auto;
+    min-width: 0;    
 }
 
 .left-block, .right-block 
 {
-  flex: 1 1 0;
-  min-width: 0;
-  flex-direction: row;
+    flex: 1 1 0;
+    min-width: 320px;
+    flex-direction: row;
+
 }
 
 .right-block h3
@@ -126,6 +131,7 @@ nav.main-nav
     align-items:flex-start;
     margin-top:20px;
     align-items: stretch;
+    flex-wrap: nowrap;
 }
 
 .sidebar
@@ -209,4 +215,12 @@ footer
     padding: 5px;
     font-size: 15px;
     margin-top: 15px;
+}
+
+@media (max-width: 900px)
+{
+    nav ul
+    {
+        flex-direction: column;
+    }
 }
