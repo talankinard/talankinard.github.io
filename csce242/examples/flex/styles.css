@@ -1,5 +1,12 @@
+
+:root
+{
+    --primary-color:#4F5902;
+    --secondary-color:#595924;
+}
+
 body {
-    background:#4F5902;
+    background:var(--primary-color);
     font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -37,10 +44,12 @@ body {
 }
 
 #main-header {
-    background:#4F5902;
+    background:var(--primary-color);
     color:white;
     border-radius:5px;
     padding:5px;
+
+    position: relative;
 }
 
 #main-content section, #main-content aside
@@ -50,7 +59,7 @@ body {
 
 .squirrel
 {
-    background: #595924;
+    background: var(--secondary-color);
     padding: 5px;
     border-radius: 5px;
     margin: 5px;
@@ -59,6 +68,27 @@ body {
 .squirrel .columns div
 {
     width: 30%;
+}
+
+/*Showcase*/
+
+#showcase
+{
+    /*Making parent relative allows free movement using absolute without gaps*/
+    position: relative;
+}
+
+#showcase p
+{
+    background:var(--primary-color);
+    color:white;
+    padding:5px;
+    width: fit-content;
+
+    position: absolute;
+    top:10px;
+    left:40%;
+    
 }
 
 /*Gallery*/
@@ -84,13 +114,19 @@ img
 }
 
 /* Main Navigation */
-#main-nav ul {
+nav ul {
     list-style-type: none;  /* remove the bullets */
     padding-left:0;
 }
 
+nav a
+{
+    text-decoration: none;
+}
+
 #main-nav li {
     border-bottom:1px solid white;
+    text-decoration: none;
 }
 
 #main-nav li:first-child {
@@ -101,13 +137,33 @@ img
     color:white;
     padding:10px 5px;
     display:block;
-    text-decoration: none; /* remove the under lines */
 }
 
 #main-nav a:hover {
     background:white;
     color:#4F5902;
 }
+
+#login-nav
+{
+    position: absolute;
+    top:-10px;
+    left:5px;
+}
+
+#login-nav a
+{
+    color:white;
+    padding: 10px;
+    transition: background-color .5s ease-in-out;
+}
+
+#login-nav a:hover
+{
+    border-bottom: 1px solid white;
+    background-color: black;
+}
+
 
 /* Typography */
 h1 {
@@ -144,5 +200,16 @@ h1 {
         background:#4F5902;
         color:white;
         border-bottom:1px solid white;
+    }
+
+    #login-nav li:not(:last-child)::after
+    {
+    content: "|";
+    }
+
+    #login-nav li:last-child::after
+    {
+        content:">";
+        padding-left: 2px;
     }
 }

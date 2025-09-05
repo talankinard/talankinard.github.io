@@ -1,0 +1,71 @@
+body
+{
+    background: black;
+}
+
+/* Navs */
+#top-nav
+{
+    position: relative;
+    top: -10px;
+    left: -5px;
+    color: white;
+    width: 3000px;
+    display: flex;
+}
+
+#top-nav h1
+{
+    display: flex;
+    color: white;
+    position: absolute;
+    left: 810px;
+    top:35px;
+    font-size: 32px;
+    
+}
+
+#top-nav img
+{
+    display: flex;
+    width: 300px;
+    position: absolute;
+    top: 25px;
+    left:20px;
+}
+
+#top-nav ul
+{
+    display: flex;
+    list-style-type: none;
+    position: absolute;
+    left:-5px;
+    top:-10px;
+}
+
+#top-nav a
+{
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+    font-size: 12px;
+}
+
+/* Top Nav Decor */
+
+#top-nav li::after
+{
+    font-size: 0.7em;
+    padding: 4px;
+}
+
+#top-nav li:not(:last-child)::after
+    {
+    content: "|";
+    }
+
+ #top-nav li:last-child::after
+    {
+        content:">";
+        padding-left: 2px;
+    }
