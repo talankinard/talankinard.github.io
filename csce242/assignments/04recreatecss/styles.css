@@ -37,7 +37,7 @@ body
     width: 300px;
     position: absolute;
     top: 25px;
-    left:20px;
+    left:15px;
 }
 
 #top-nav ul
@@ -45,8 +45,8 @@ body
     display: flex;
     list-style-type: none;
     position: absolute;
-    left:-5px;
-    top:-10px;
+    left:0px;
+    top:-5px;
 }
 
 #top-nav a
@@ -59,6 +59,12 @@ body
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+#logo
+{
+    position: absolute;
+    left:10px
 }
 
 /* Top Nav Decor */
@@ -107,7 +113,7 @@ body
     position: absolute;
     display: flex;
     left: 745px;
-    top:0px;
+    top:-5px;
     font-size: 15px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
@@ -159,16 +165,40 @@ body
     background: white;
     position: absolute;
     top:615px;
-    left:10px;
-    width: 735px;
-    height: 95px;
+    left:5px;
+    width: 725px;
+    height: 90px;
     opacity: 50%;
 }
 
 #sidebar h1
 {
-    padding-left: 55px;
-    padding-top: 5px; 
+    padding-left: 45px;
+    padding-top: 0px; 
     color: #700109;
-   font-size: 34px;
+    font-size: 34px;
+}
+
+/* Third Section */
+
+#third-section
+{
+    background: white;
+    position: relative;
+    top:690px;
+    left:-10px;
+    height: 325px;
+    width: 100vw;
+}
+
+#third-section p
+{
+    font-size: 23px;
+    text-align: left;
+    max-width: 750px;
+    position: absolute;
+    left:335px;
+    top:20px;
+    line-height: 40px;
+    font-weight: bold;  
 }
