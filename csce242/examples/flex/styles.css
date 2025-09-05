@@ -210,6 +210,5 @@ h1 {
     #login-nav li:last-child::after
     {
         content:">";
-        padding-left: 2px;
     }
 }
