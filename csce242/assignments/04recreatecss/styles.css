@@ -764,3 +764,81 @@ body
     margin-left: -35px;
     font-size: 10px;
 }
+
+/* Tenth Section */
+
+#tenth-section
+{
+    position: relative;
+    background: black;
+    top:1269.5px;
+    left:-10px;
+    height:500px;
+}  
+
+#tenth-section h1
+{
+    position: absolute;
+    color: white;
+    font-size:45px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 500px;
+    top:65px;
+    left:45px;
+}
+
+#tenth-section img
+{
+    position: absolute;
+    top:25px;
+    right:30px;
+}
+
+#tenth-section p
+{
+    position: absolute;
+    top:200px;
+    left:45px;
+    width:675px;
+    color: white;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+#tenth-section a
+{
+    background-color: var(--garnet);
+    position: absolute;
+    top:350px;
+    left:45px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    width: 115px;
+    height:45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#tenth-section a::after 
+{
+    content: " >>";
+    font-weight: 800;
+    padding: 3px;
+    font-size: 10px;
+}
+
+/* Eleventh Section */
+
+#eleventh-section
+{
+    position: relative;
+    background: white;
+    top:1247.5px;
+    left:-10px;
+}
