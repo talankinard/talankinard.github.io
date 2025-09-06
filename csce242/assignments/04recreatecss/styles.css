@@ -440,17 +440,58 @@ body
     position: absolute;
     top: 415px;
     left:620px;
-    height: 300px;
+    height: 285px;
     width:750px;
+    display: flex;
 }
 
 #sixth-section #blocks h1
 {
     color: white;
     position: absolute;
-    top: -5px;
+    top: -20px;
     left:40px;
     font-size: 45px;
     font-family:Arial, Helvetica, sans-serif ;
 
+}
+
+#sixth-section #blocks p
+{
+    color: white;
+    position: absolute;
+    top: 65px;
+    left:40px;
+    font-size: 18px;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 30px;
+}
+
+#sixth-section #blocks a
+{
+    background-color: var(--garnet);
+    position: absolute;
+    top:200px;
+    left:40px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    width: 250px;
+    height:50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#sixth-section #blocks a::after 
+{
+    content: " >>";
+    font-weight: 800;
+    padding: 8px;
+    font-size: 10px;
+    
 }
