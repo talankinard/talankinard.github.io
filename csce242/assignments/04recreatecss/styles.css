@@ -82,8 +82,8 @@ body
 
  #top-nav li:last-child::after
 {
-        content:">";
-        padding-left: 2px;
+    content:">";
+    padding-left: 2px;
  }
 
  #top-nav a:hover
@@ -201,4 +201,256 @@ body
     top:20px;
     line-height: 40px;
     font-weight: bold;  
+}
+
+/* Fourth Section */
+
+#fourth-section
+{
+    background-color: var(--garnet);
+    position: relative;
+    top: 689.5px;
+    left:-10px;
+    width:100vx;
+    height: 475px;
+}
+
+#fourth-section h1
+{
+    color:white;
+    position: absolute;
+    top:90px;
+    left:45px;
+    font-size:42px;
+    font-family: sans-serif;
+}
+
+#fourth-section img
+{
+    position: absolute;
+    top:0px;
+    right:0px;
+}
+
+#fourth-section p
+{
+    position: absolute;
+    top:170px;
+    left:45px;
+    max-width: 650px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+#fourth-section ul
+{
+    background: black;
+    position: absolute;
+    top:285px;
+    left:45px;
+    height: 50px;
+    width: 120px;
+    border: 2px solid white;
+    list-style-type: none;
+}
+
+#fourth-section li
+{
+    position: absolute;
+    top:15px;
+    left:25px;
+    color: white;
+    
+}
+
+#fourth-section a
+{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+#fourth-section li:last-child::after
+{
+    position: absolute;
+    top:0px;
+    content: ">>";
+    color: white;
+    font-size: 10px;
+}
+
+#fourth-section li::after
+{
+    font-size: 0.7em;
+    padding: 4px;
+}
+
+/* Fifth Section */
+
+#fifth-section
+{
+    background: #EDEDED;
+    position:relative;
+    top:670px;
+    left:-10px;
+    width: 100vw;
+    height: 360px;
+}
+
+#fifth-section h1
+{
+    position: absolute;
+    color: var(--garnet);
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 43px;
+    right:560px;
+    top:40px;
+}
+
+#fifth-section p
+{
+    position: absolute;
+    color: black;
+    font-family: Arial;
+    font-size: 16px;
+    right:375px;
+    top:120px;
+    width: 700px;
+    text-align: center;
+    line-height: 30px;
+
+}
+
+#undergrad 
+{
+    position: absolute;
+    top: 240px;
+    left: 395px;            
+    width: 190px;
+    height: 49px;
+    background: var(--garnet);
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+    padding-left: 5px;
+}
+
+#grad 
+{
+    position: absolute;
+    top: 240px;
+    left: 650px;           
+    width: 150px;              
+    height: 49px;
+    background: var(--garnet);
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+#depart
+{
+    position: absolute;
+    top: 240px;
+    left: 860px;         
+    width: 175px;
+    height: 49px;
+    background: var(--garnet);
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25); /* shadow so yoiu can see the border */
+}
+
+#undergrad::after 
+{
+    content: " >>";
+    font-weight: 800;
+    padding: 8px;
+    font-size: 10px;
+}
+
+#grad::after 
+{
+    content: " >>";
+    font-weight: 800;
+    padding: 8px;
+    font-size: 10px;
+}
+
+#depart::after
+{
+    content: " >>";
+    font-weight: 800;
+    padding: 8px;
+    font-size:10px;
+}
+
+/* Sixth Section */
+
+#sixth-section
+{
+    background-color: black;
+    position: relative;
+    top: 670px;
+    left:-10px;
+    width:100vx;
+    height: 100px;
+}
+
+#sixth-section img
+{
+    position:absolute;
+    top:-20px;
+    left:0px;
+}
+
+#sixth-section #blocks
+{
+    background: black;
+    position: absolute;
+    top: 415px;
+    left:620px;
+    height: 300px;
+    width:750px;
+}
+
+#sixth-section #blocks h1
+{
+    color: white;
+    position: absolute;
+    top: -5px;
+    left:40px;
+    font-size: 45px;
+    font-family:Arial, Helvetica, sans-serif ;
+
 }
