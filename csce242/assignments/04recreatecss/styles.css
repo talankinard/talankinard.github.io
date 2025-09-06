@@ -538,7 +538,7 @@ body
 #seventh-section img
 {
     position: absolute;
-    top:30px;
+    top:16.5px;
     left:175px;
     border-radius: 80%;
 }
@@ -841,4 +841,69 @@ body
     background: white;
     top:1247.5px;
     left:-10px;
+    height: 150px;
 }
+
+#eleventh-section h1
+{
+    color: var(--garnet);
+    font-size:25px;
+    position: absolute;
+    font-weight: 600;
+    top:10px;
+    left:65px;
+}
+
+#eleventh-section h1::after 
+{
+    justify-content: center;
+    align-items: center;
+    content: " >>";
+    font-weight: 800;
+    padding: 1px;
+    font-size: 10px;
+    color: var(--garnet);
+}
+
+#eleventh-section a
+{
+    background-color: black;
+    position: absolute;
+    top:65px;
+    left:65px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    width: 300px;
+    height:45px;
+    font-family:Arial;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+
+}
+
+#eleventh-section a::after 
+{
+    content: ">>";
+    font-weight: 800;
+    padding: 3px;
+    font-size: 10px;
+}
+
+#eleventh-section #gallery 
+{
+    position: absolute;
+    top:65px;
+    left:400px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* repreats 3x */
+    gap:100px;
+    padding-left: 10px;
+    width: 2000px;
+}
+
