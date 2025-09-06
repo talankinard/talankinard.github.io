@@ -212,7 +212,7 @@ body
     position: relative;
     top: 689.5px;
     left:-10px;
-    width:100vx;
+    width:100vw;
     height: 475px;
 }
 
@@ -424,7 +424,7 @@ body
     position: relative;
     top: 670px;
     left:-10px;
-    width:100vx;
+    width:100vw;
     height: 100px;
 }
 
@@ -790,7 +790,7 @@ body
 #tenth-section img
 {
     position: absolute;
-    top:25px;
+    top:15px;
     right:30px;
 }
 
@@ -895,15 +895,123 @@ body
     font-size: 10px;
 }
 
-#eleventh-section #gallery 
+#eleventh-section #gallery
 {
     position: absolute;
     top:65px;
     left:400px;
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* repreats 3x */
+    grid-template-columns: repeat(5, 1fr);
     gap:100px;
     padding-left: 10px;
     width: 2000px;
 }
 
+#left-col a
+{
+    position: relative;
+    top:1115px;
+    text-decoration: none;
+    display: block;
+    color: var(--garnet);
+    left: 720px;      
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+    line-height: 40px;  
+    text-transform: uppercase;   
+    font-size: 14px;           
+    border-left: 1px solid #a3a3a3;
+    padding-left: 10px;
+    transition: background-color .3s ease-in-out;
+    width: 120px;
+}
+
+#left-col a::after 
+{
+    content: ">>";
+    font-weight: 800;
+    padding: 8px;
+    font-size: 10px;
+}
+
+#mid-col a
+{
+    position: relative;
+    top:977.5px;
+    text-decoration: none;
+    display: block;
+    color: var(--garnet);
+    left: 900px;      
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold;
+    line-height: 40px;  
+    text-transform: uppercase;   
+    font-size: 14px;   
+    transition: background-color .3s ease-in-out;  
+    width: 120px;      
+}
+
+#mid-col a::after 
+{
+    content: ">>";
+    font-weight: 800;
+    padding: 8px;
+    font-size: 10px;
+}
+
+#left-col a:hover
+{
+    background-color: var(--hover-color); 
+    color: white;
+}
+
+#mid-col a:hover
+{
+    background-color: var(--hover-color); 
+    color: white;
+}
+
+#address 
+{
+    border-left: 1px solid #a3a3a3;
+    padding-left: 10px;
+    position: relative;
+    top: 840px;
+    left: 1175px;
+    width: 110px;
+    display: flex;
+}
+
+#right-col h4
+{
+    position: relative;
+    top:10px;
+    left:1175x;
+    display: block;
+    color: var(--garnet);     
+    font-family: Arial, Helvetica, sans-serif;  
+    text-decoration: underline;
+    font-size: 14px;    
+    transition: background-color .3s ease-in-out;  
+    width: 110px;   
+    margin: 0;   
+}
+
+#right-col h4:hover
+{
+    background-color: var(--hover-color); 
+    color: white;
+}
+
+#right-col p
+{
+    position: relative;
+    top:0px;
+    left:0px;
+    display: block;
+    color:black;    
+    font-family: Arial, Helvetica, sans-serif;  
+    font-size: 14px;    
+    line-height: 25px;
+    width: 150px;
+}
