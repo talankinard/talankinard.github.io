@@ -566,10 +566,82 @@ body
     width: 450px;
 }
 
+#eighth-section p
+{
+    position: absolute;
+    color: white;
+    top:210px;
+    left:42px;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 600px;
+    line-height: 30px;
+}
+
+#eighth-section a
+{
+    background-color: var(--garnet);
+    position: absolute;
+    top:315px;
+    left:40px;
+    border: 2px solid white;
+    text-decoration: none;
+    color: white;
+    width: 130px;
+    height:45px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#eighth-section a::after 
+{
+    content: " >>";
+    font-weight: 800;
+    padding: 3px;
+    font-size: 10px;
+}
+
+
 #eighth-section img
 {
     position: absolute;
     top:0;
     right:0;
-    
+}
+
+/* Ninth Section */
+
+#ninth-section 
+{
+    position: relative;
+    top:1291px;
+    left:-10px;
+    width: 1440px;
+    height: 780px;
+    background:white;
+}
+
+#ninth-section h1
+{
+    position: absolute;
+    top:55px;
+    left:665px;
+    color: var(--garnet);
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#ninth-section .columns
+{
+    position: absolute;
+    top:150px;
+    left:100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* repreats 3x */
+    gap:40px;
 }
