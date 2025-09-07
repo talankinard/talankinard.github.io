@@ -1018,22 +1018,212 @@ body
 
 /* Section Twelve */
 
-#sectiontwelve nav
+#sectiontwelve 
+{
+    position: relative; /* instead of absolute */
+    top:875.5px;
+    left: -10px;
+    width: 100vw;
+    background: var(--garnet); /* keeps garnet color */
+    height: 440px;
+    border: 1px solid white;
+}
+
+#sectiontwelve #sociallogos img
 {
     position: relative;
-    top:875px;
-    left:-10px;
-    height:435px;
-    background: var(--garnet);
-    border: 1px solid white;
+    top:25px;
+    left:1225px;
+    padding: 5px;
+    border-radius: 50%;
+}
 
+#sectiontwelve #logo img
+{
+    position: relative;
+    top:35px;
+    left:40px;
+    display: flex;
 }
 
 #sectiontwelve h3
 {
     position: absolute;
     color: white;
-    top:115px;
-    left:50px;
     font-family: Arial, Helvetica, sans-serif;
+    top:110px;
+    left:50px;
+    font: 15px;
+    text-transform: uppercase;
+}
+
+#sectiontwelve #colone a
+{
+    position: relative;
+    top:105px;
+    left:50px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    line-height: 30px;
+    width: 250px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#sectiontwelve #colone
+{
+    flex-direction: column;
+}
+
+#sectiontwelve #coltwo a
+{
+    position: relative;
+    top:-105px;
+    left:290px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    line-height: 30px;
+    width: 200px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#sectiontwelve #coltwo
+{
+    flex-direction: column;
+}
+
+#sectiontwelve #colthree a
+{
+    position: relative;
+    top:-315px;
+    left:500px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    line-height: 30px;
+    width: 300px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#sectiontwelve #colthree
+{
+    flex-direction: column;
+}
+
+#sectiontwelve #head2
+{
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    top:-600px;
+    left:675px;
+    font: 15px;
+    text-transform: uppercase;
+}
+
+#sectiontwelve #colfour a
+{
+    position: relative;
+    top:-435px;
+    left:730px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    line-height: 30px;
+    width: 300px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#sectiontwelve #colfour
+{
+    flex-direction: column;
+}
+
+#sectiontwelve #colfive a
+{
+    position: relative;
+    top:-615px;
+    left:955px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    line-height: 30px;
+    width: 300px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#sectiontwelve #colfive
+{
+    flex-direction: column;
+}
+
+#sectiontwelve #head3
+{
+    position: relative;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    top:-930px;
+    left:1150px;
+    font: 15px;
+    text-transform: uppercase;
+
+}
+
+
+#sectiontwelve #colsix a
+{
+    position: relative;
+    top:-765px;
+    left:1200px;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    line-height: 30px;
+    width: 300px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+#sectiontwelve #colsix
+{
+    flex-direction: column;
+}
+
+#sectiontwelve #head1 h3::after 
+{
+    content: "";
+    position: absolute;
+    left: 0;                     
+    bottom: 0;                   
+    width: 420px;                
+    height: 2px;                 
+    background-color: currentColor;
+}
+
+#sectiontwelve #head2 h3::after 
+{
+    content: "";
+    position: absolute;
+    left: 0;                     
+    bottom: 0;                   
+    width: 420px;                
+    height: 2px;                 
+    background-color: currentColor;
+}
+
+#sectiontwelve #head3 h3::after 
+{
+    content: "";
+    position: absolute;
+    left: 0;                     
+    bottom: 0;                   
+    width: 200px;                
+    height: 2px;                 
+    background-color: currentColor;
 }
