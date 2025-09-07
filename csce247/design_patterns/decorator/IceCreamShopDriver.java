@@ -17,9 +17,9 @@ public class IceCreamShopDriver {
 		IceCream iceCream = new Cone();
 
 		System.out.println("You can have a maximum of " + MAX_SCOOPS + " scoops.");
-		iceCream = addScoops(iceCream, BLUEBERRY);
+		iceCream = addScoops(iceCream, VANILLA);
 		iceCream = addScoops(iceCream, STRAWBERRY);
-		iceCream = addScoops(iceCream, VANILLA);		
+		iceCream = addScoops(iceCream, BLUEBERRY);		
 
 		System.out.println("\nHere's your ice cream cone. \n");
 		System.out.println(iceCream);

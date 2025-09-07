@@ -1,12 +1,9 @@
-public class Vanilla extends ScoopDecorator//again same thing
-{
-    public Vanilla(IceCream iceCream, int numScoops)
-    {
-        super(iceCream,numScoops); //required for parents classes to pass it
+public class Vanilla extends ScoopDecorator {
+    public Vanilla(IceCream base, int n) { 
+        super(base, n); 
     }
-
-    protected String color()
-    {
-        return ANSI_WHITE; //vanilla color
+    @Override 
+    protected String colorCode() { 
+        return ANSI_WHITE; 
     }
 }

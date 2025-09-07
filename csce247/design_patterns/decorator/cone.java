@@ -6,7 +6,7 @@ public class Cone extends IceCream //child
 
     public Cone()
     {
-        ArrayList<String> coneLines = FileReader.getLines("csce247/design_patterns/decorator/cone.txt"); //load code from txt file had to add path
+        ArrayList<String> coneLines = FileReader.getLines("csce247/design_patterns/decorator/txt/cone.txt"); //load code from txt file had to add path
 
         for(String line: coneLines)
         {

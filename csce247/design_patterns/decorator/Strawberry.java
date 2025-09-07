@@ -1,13 +1,9 @@
-public class Strawberry extends ScoopDecorator //same thing as blueberyy 
-{
-    
-    public Strawberry(IceCream iceCream, int numScoops)
-    {
-        super(iceCream,numScoops); //required for parents classes to pass it
+public class Strawberry extends ScoopDecorator {
+    public Strawberry(IceCream base, int n) { 
+        super(base, n); 
     }
-
-    protected String color()
-    {
-        return ANSI_RED; //strawberry color (best flavor)
+    @Override 
+    protected String colorCode() { 
+        return ANSI_RED; 
     }
 }
