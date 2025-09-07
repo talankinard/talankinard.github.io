@@ -1015,3 +1015,25 @@ body
     line-height: 25px;
     width: 150px;
 }
+
+/* Section Twelve */
+
+#sectiontwelve nav
+{
+    position: relative;
+    top:875px;
+    left:-10px;
+    height:435px;
+    background: var(--garnet);
+    border: 1px solid white;
+
+}
+
+#sectiontwelve h3
+{
+    position: absolute;
+    color: white;
+    top:115px;
+    left:50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
