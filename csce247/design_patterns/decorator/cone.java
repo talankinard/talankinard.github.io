@@ -6,13 +6,14 @@ public class Cone extends IceCream //child
 
     public Cone()
     {
-        ArrayList<String> coneLines = FileReader.getLines("cone.txt"); //load code from txt file
+        ArrayList<String> coneLines = FileReader.getLines("csce247/design_patterns/decorator/cone.txt"); //load code from txt file had to add path
 
         for(String line: coneLines)
         {
             asciiArt.add(ANSI_BROWN+line+ANSI_RESET); //adds each line w brown cone coloring
         }
 
+        //0 for start of cone
         numScoops = 0;
     }
 }
