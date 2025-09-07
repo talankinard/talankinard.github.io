@@ -1276,3 +1276,539 @@ body
     color: white;
     font-weight: normal;
 }
+
+/*Smaller Devices */
+
+@media (max-width: 768px)
+{
+  html
+  {
+    overflow-x: hidden;
+  }
+
+  body
+  {
+    overflow-x: hidden;
+  }
+
+  #top-nav
+  {
+    max-width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 8px 12px;
+  }
+
+  #top-nav img
+  {
+    position: static;
+    width: 180px;
+    display: block;
+  }
+
+  #top-nav h1
+  {
+    position: static;
+    font-size: 20px;
+    line-height: 1.2;
+  }
+
+  #top-nav ul
+  {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #top-nav a
+  {
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+
+  #second-content
+  {
+    left: 0;
+    width: 100%;
+    height: auto;
+    padding: 8px 0;
+    box-sizing: border-box;
+  }
+
+  #second-content ul
+  {
+    position: static;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    margin: 0;
+    padding: 0 12px;
+    font-size: 13px;
+  }
+
+  #image-one img
+  {
+    position: relative;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  #third-section
+  {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
+    height: auto;
+    padding: 16px;
+  }
+
+  #third-section p
+  {
+    position: static;
+    max-width: 100%;
+    line-height: 1.6;
+    font-size: 18px;
+  }
+
+  #fourth-section
+  {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
+    height: auto;
+    padding: 16px;
+  }
+
+  #fourth-section h1
+  {
+    position: static;
+    font-size: 28px;
+    margin-bottom: 8px;
+  }
+
+  #fourth-section p
+  {
+    position: static;
+    max-width: 100%;
+    font-size: 16px;
+  }
+
+  #fourth-section img
+  {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+  }
+
+  #fourth-section ul
+  {
+    position: static;
+    margin-top: 12px;
+    width: auto;
+    height: auto;
+  }
+
+  #fifth-section
+  {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
+    height: auto;
+    padding-bottom: 16px;
+  }
+
+  #fifth-section h1
+  {
+    position: static;
+    margin: 0 16px 12px;
+    width: auto;
+    text-align: left;
+  }
+
+  #fifth-section p
+  {
+    position: static;
+    margin: 0 16px 12px;
+    width: auto;
+    text-align: left;
+  }
+
+  #undergrad
+  {
+    position: static;
+    display: block;
+    margin: 8px 16px;
+    width: auto;
+  }
+
+  #grad
+  {
+    position: static;
+    display: block;
+    margin: 8px 16px;
+    width: auto;
+  }
+
+  #depart
+  {
+    position: static;
+    display: block;
+    margin: 8px 16px;
+    width: auto;
+  }
+
+  #sixth-section
+  {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
+    height: auto;
+  }
+
+  #sixth-section img
+  {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+  }
+
+  #sixth-section #blocks
+  {
+    position: static;
+    width: auto;
+    height: auto;
+    display: block;
+    padding: 16px;
+  }
+
+  #sixth-section #blocks h1
+  {
+    position: static;
+    margin: 8px 0;
+    width: auto;
+  }
+
+  #sixth-section #blocks p
+  {
+    position: static;
+    margin: 8px 0;
+    width: auto;
+  }
+
+  #sixth-section #blocks a
+  {
+    position: static;
+    margin: 8px 0;
+    width: auto;
+  }
+
+  #seventh-section
+  {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
+    height: auto;
+    padding: 16px;
+  }
+
+  #seventh-section img
+  {
+    position: static;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 12px;
+    border-radius: 80%;
+  }
+
+  #seventh-section p
+  {
+    position: static;
+    width: auto;
+    text-align: left;
+  }
+
+  #seventh-section h5
+  {
+    position: static;
+    width: auto;
+    text-align: left;
+  }
+
+  #eighth-section
+  {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
+    height: auto;
+    padding: 16px;
+  }
+
+  #eighth-section img
+  {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin-top: 12px;
+  }
+
+  #eighth-section h1
+  {
+    position: static;
+    margin: 8px 0;
+    width: auto;
+  }
+
+  #eighth-section p
+  {
+    position: static;
+    margin: 8px 0;
+    width: auto;
+  }
+
+  #eighth-section a
+  {
+    position: static;
+    margin: 8px 0;
+    width: auto;
+  }
+
+  #ninth-section
+  {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
+    height: auto;
+  }
+
+  #ninth-section .columns
+  {
+    position: static;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    left: auto;
+    top: auto;
+    padding: 0 16px;
+  }
+
+  #ninth-section #head1
+  {
+    position: static;
+    margin: 8px 16px;
+  }
+
+  #ninth-section #head2
+  {
+    position: static;
+    margin: 8px 16px;
+  }
+
+  #ninth-section #head3
+  {
+    position: static;
+    margin: 8px 16px;
+  }
+
+  #ninth-section #p1
+  {
+    position: static;
+    margin: 8px 16px;
+  }
+
+  #ninth-section #p2
+  {
+    position: static;
+    margin: 8px 16px;
+  }
+
+  #ninth-section #p3
+  {
+    position: static;
+    margin: 8px 16px;
+  }
+
+  #ninth-section #button1
+  {
+    position: static;
+    margin: 8px 16px;
+  }
+
+  #ninth-section #button2
+  {
+    position: static;
+    margin: 8px 16px;
+  }
+
+  #ninth-section #button3
+  {
+    position: static;
+    margin: 8px 16px;
+  }
+
+  #tenth-section
+  {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
+    height: auto;
+  }
+
+  #tenth-section h1
+  {
+    position: static;
+    width: auto;
+    margin: 8px 16px;
+  }
+
+  #tenth-section p
+  {
+    position: static;
+    width: auto;
+    margin: 8px 16px;
+  }
+
+  #tenth-section a
+  {
+    position: static;
+    width: auto;
+    margin: 8px 16px;
+  }
+
+  #tenth-section img
+  {
+    position: static;
+    width: 100%;
+    height: auto;
+    margin: 12px 0;
+  }
+
+  #eleventh-section
+  {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
+    height: auto;
+  }
+
+  #eleventh-section #gallery
+  {
+    position: static;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    padding: 12px;
+    width: auto;
+  }
+
+  #sectiontwelve
+  {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
+    height: auto;
+  }
+
+  #sectiontwelve #colone a
+  {
+    position: static;
+    display: block;
+    width: auto;
+    padding: 4px 12px;
+  }
+
+  #sectiontwelve #coltwo a
+  {
+    position: static;
+    display: block;
+    width: auto;
+    padding: 4px 12px;
+  }
+
+  #sectiontwelve #colthree a
+  {
+    position: static;
+    display: block;
+    width: auto;
+    padding: 4px 12px;
+  }
+
+  #sectiontwelve #colfour a
+  {
+    position: static;
+    display: block;
+    width: auto;
+    padding: 4px 12px;
+  }
+
+  #sectiontwelve #colfive a
+  {
+    position: static;
+    display: block;
+    width: auto;
+    padding: 4px 12px;
+  }
+
+  #sectiontwelve #colsix a
+  {
+    position: static;
+    display: block;
+    width: auto;
+    padding: 4px 12px;
+  }
+
+  #sectiontwelve #head1
+  {
+    position: static;
+    padding: 12px;
+  }
+
+  #sectiontwelve #head2
+  {
+    position: static;
+    padding: 12px;
+  }
+
+  #sectiontwelve #head3
+  {
+    position: static;
+    padding: 12px;
+  }
+
+  #lastsection
+  {
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100%;
+    margin-top: 24px;
+    height: auto;
+  }
+}
