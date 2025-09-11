@@ -37,13 +37,30 @@
             <main class="columns examples">
                 <section>
                     <button id="btn-click-me">Click Me</button>
+                    <p id="p-welcome"></p>
                     <p></p>
-                </section>                
+                </section>  
+                <section>
+                    <button id="happy-button">Happy</button>
+                    <button id="sad-button">Sad</button>
+                    <button id="clear-button">Clear</button>
+
+                    <p id="p-feeling"></p>
+                </section>        
+                <section>
+                    <p>
+                        <label for="txt.emotion">Enter Emotion:</label> <!--for in label has to match id in input-->
+                        <input type="text" id="txt.emotion">
+                    </p>
+                    <p id="p-emotion"></p>
+                    <img id="img-emotion" src="https://dummyimage.com/100x100/000/fff" class="hidden">
+                </section>      
             </main>
             <footer>
-                <p>&copy; myname</p>
+                <p>&copy; talankinard</p>
             </footer>
         </div>
         <script src="js/intro.js"></script>
+        <script src="js/toggle-nav.js"></script>
     </body>
 </html>
