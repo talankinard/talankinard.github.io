@@ -125,7 +125,7 @@ h5
 
 img
 {
-     max-width: 100%;     /* image shrinsk with window */
+    max-width: 100%;     /* image shrinsk with window */
     height: auto;       
     border: black;
     border-radius: 5px;
