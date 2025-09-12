@@ -1,4 +1,3 @@
-package state;
 import java.util.Random;
 
 //BASE PARENT CLASS

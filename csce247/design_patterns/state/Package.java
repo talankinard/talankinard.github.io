@@ -1,5 +1,3 @@
-package state;
-
 public class Package 
 {
     //uml
@@ -38,7 +36,7 @@ public class Package
         return state.getStatus()+"\n"+state.getETA();
     }
 
-    public String recieved()
+    public String received()
     {
         setState(deliveredState);
         return state.getStatus()+"\n"+state.getETA();
