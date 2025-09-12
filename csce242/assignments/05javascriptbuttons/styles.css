@@ -82,6 +82,7 @@ footer
     grid-column: 1 / -1;    
     text-align: center;
     margin: 16px 0 24px;
+    text-decoration: none;
 }
 
 footer p 
