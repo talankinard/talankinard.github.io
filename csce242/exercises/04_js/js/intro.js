@@ -50,3 +50,4 @@ document.getElementById("txt.emotion").onkeyup = (event) =>
     
     //.style.color maybe
 };
+

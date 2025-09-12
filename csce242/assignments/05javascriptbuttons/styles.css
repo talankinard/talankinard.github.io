@@ -1,8 +1,3 @@
-:root
-{
-    
-}
-
 body
 {
     background: #CADCAE;
@@ -31,9 +26,8 @@ h3
 
 .columns h4
 {
-    text-align: center;
+    text-align: center; 
 }
-
 
 #box1
 {
@@ -102,6 +96,15 @@ img
 .hidden 
 {
     display:none;
+}
+
+footer p
+{
+    position: relative;
+    top:500px;
+    left:650px;
+    color: #EDA35A;
+    text-shadow: 2px 2px 4px white;
 }
 
 
