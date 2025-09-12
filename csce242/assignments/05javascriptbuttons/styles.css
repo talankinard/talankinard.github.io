@@ -98,11 +98,6 @@ footer a
   text-decoration: none;
 }
 
-footer #home
-{
-  text-decoration: underline;
-}
-
 
 /*medium*/
 @media (min-width: 700px) 
