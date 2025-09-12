@@ -25,5 +25,20 @@ document.getElementById("colorPicker").oninput = (event) =>
 };
 
 
+//just fun practice
+document.getElementById("footer").onmouseover = (event) =>
+{
+    document.getElementById("name").classList.add("hidden"); 
+    document.getElementById("home").classList.remove("hidden");
+};
+
+document.getElementById("footer").onmouseout = () => 
+{
+    document.getElementById("name").classList.remove("hidden");
+    document.getElementById("home").classList.add("hidden");
+};
+
+
+
 
 

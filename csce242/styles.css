@@ -18,6 +18,12 @@ h1
 {
     color: black;
     text-align: center;
+    padding-top: 5px;
+}
+
+h1:hover
+{
+    text-shadow: 1px 1px 1px #83c5be;
 }
 
 h3
@@ -38,12 +44,23 @@ p
 a
 {
     text-decoration: none;
-    color:black
+    color:black;
+}
+
+a:hover
+{
+    text-decoration: underline;
 }
 
 h5
 {
     text-align: center;
+    padding-bottom: 5px;
+}
+
+h5:hover
+{
+    text-shadow: 1px 1px 1px #83c5be;
 }
 
 #main-header
@@ -73,6 +90,11 @@ h5
 .assignments h4:hover
 {
     text-decoration: underline;
+}
+
+.assignments img:hover
+{
+    box-shadow: 2px 2px 6px black;
 }
 
 .assignments h3 
@@ -196,4 +218,9 @@ img
 .projects h4:hover
 {
     text-decoration: underline;
+}
+
+.projects img:hover
+{
+    box-shadow: 2px 2px 6px black;
 }
