@@ -1,0 +1,113 @@
+:root
+{
+    --default:#0000;
+    --color-two:#ffff;
+    --active-color:#4DA6FF;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1
+{
+    text-align: center;
+}
+
+/* General nav */
+
+#top-nav
+{
+    background: white;
+    height: 200px;
+
+}
+
+#top-nav ul
+{
+    list-style-type: none;
+    display: flex;
+    position: absolute;
+    top:70px;
+    left:400px;
+}
+
+#top-nav a
+{
+    text-decoration: none;
+    color: black;
+    margin-left: 20px;
+    font-size: 18px;
+}
+
+/* to represent current page */
+#top-nav a.active 
+{
+    color: var(--active-color);            
+    border-bottom: 2px solid var(--active-color);
+    font-weight: bold;
+    font-size: 15px;   
+}
+
+hr 
+{
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top:105px;
+    left:-5px;
+    
+}
+
+/* Below Nav */
+
+#home h2
+{
+    position: absolute;
+    top:125px;
+    left:50px;
+    font-weight: normal;
+    font-size: 25px;
+
+}
+
+.popular-grid
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 56px 80px;        
+    justify-items: center; 
+    margin: -20px auto 0;    
+    max-width: 1100px;    
+}
+
+.pop
+{
+    box-sizing: border-box;
+    padding: 0; 
+    text-align: center;        
+}
+
+.image
+{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.pop h3
+{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 8px 0;
+    color: #000;
+}
+
+.pop p
+{
+    font-size: 14px;
+    line-height: 1.5;
+    color:black;
+    max-width: 320px;  
+}
