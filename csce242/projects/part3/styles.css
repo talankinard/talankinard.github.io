@@ -1070,3 +1070,11 @@ hr
   }
 
 }
+
+hr {
+    display: block;
+    width: 100vw;
+    position: absolute;
+    top:125px;
+    left:0px;
+}
