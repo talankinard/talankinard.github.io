@@ -555,15 +555,18 @@ hr
 {
     margin-top: -167px;          
     height: 50vh;               
-    background: #000;
-    color: #fff;
+    background: black;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 24px 32px;
     box-sizing: border-box;
     position: relative;
-    z-index: 0;
+    top:-167px;
+    width: 100vw;
+    
+    
 }
 
 .contact-main .contact-left 
@@ -1096,3 +1099,16 @@ hr
     border-top: 1px solid #000;
   }
 }
+
+
+.contact-main
+{
+     width: 100%; 
+     max-width: none;
+    margin: 0; 
+    margin-top: 0;
+}
+.contact-info h3:first-child 
+{
+    margin-top: -150px;
+} 
