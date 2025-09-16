@@ -87,6 +87,15 @@ main {
     color:purple;
 }
 
+.error
+{
+    color: red;
+}
+
+input{
+    max-width: 100%;
+}
+
 .sub-section a {
     text-decoration:none;
     color:var(--primary-color);
@@ -102,30 +111,40 @@ main {
 }
 
 /* Animations */
-#animation-fun {
-    background:#a0ccd8;
-    padding:20px;
-    height:300px;
-    position:relative;
-}
-
-#ball-area {
-    position:relative;
-}
-
-#ball, #circle {
-    height: 30px;
-    width:30px;
-    background:var(--circle-color);
-    border-radius:50px;
-    position:relative;
-    left:35%;
-}
 
 #ball {
-    animation-name: fun;
-    animation-duration: 4s;
+    background: cyan;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    position: relative;
+    margin-top: 10px;;
+}
+
+.bounce
+{
+    animation-name: color-change;
+    animation-name: ball-bounce;
+    animation-duration: 3s;
     animation-iteration-count: infinite;
+
+}
+@keyframes ball-bounce
+{
+    0%{top:0px;}
+    50%{top:-200px;}
+    51%{top:-205px;}
+    99%{top:0px;}
+    100%{top:-5px;}
+}
+
+@keyframes color-change
+{
+    0% {background: cyan;}
+    25% {background: blue;}
+    50% {background: darkblue;}
+    75%{background: darkgrey;}
+    100%{background: black;}
 }
 
 /* Donations */

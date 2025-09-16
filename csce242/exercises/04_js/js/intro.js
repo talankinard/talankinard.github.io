@@ -51,3 +51,54 @@ document.getElementById("txt.emotion").onkeyup = (event) =>
     //.style.color maybe
 };
 
+document.getElementById("btn-mood-ring").onclick = () => 
+{
+    const color = document.getElementById("txt-color").value.trim().toLowerCase();
+    const p = document.getElementById("p-mood-result");
+    const error = document.getElementById("error-color");
+    p.innerHTML=""; //reset paragraph
+    error.innerHTML = "";
+    let mood = "";
+
+    if(color == "")
+    {
+        error.innerHTML = "* Invalid color"; //error msg
+        return;
+    }
+
+    if(color == "red")
+    {
+        mood = "angry";
+    } else if(color == "blue")
+    {
+        mood="sad";
+ 
+    } else if(color == "yellow")
+    {
+        mood="mellow";
+    }
+
+    if(mood == "")
+    {
+        error.innerHTML="* Invalid color dork";
+        return;
+    }
+
+    p.innerHTML = `You chose ${color}, so you are feeling ${mood} (probably).`;
+}
+
+document.getElementById("btn-bounce").onclick = (event) => 
+{
+    const ball = document.getElementById("ball");
+
+
+    if(ball.classList.contains == "bounce")
+    {
+        event.currentTarget.innerHTML = "Start";
+    }else
+    {
+        event.currentTarget.innerHTML = "Stop";
+    }
+
+    ball.classList.toggle("bounce");
+}
