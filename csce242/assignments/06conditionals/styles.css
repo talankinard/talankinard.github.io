@@ -74,7 +74,6 @@ h3
     left:425px;
 }
 
-
 img
 {
     height:150px;
@@ -88,8 +87,80 @@ img
     padding-bottom: 20px;
 }
 
+/* Clock */
+
+#clock
+{
+    background:#F5BABB;
+    width:70%;
+    position: relative;
+    left:225px;
+    top:50px;
+    height: fit-content;
+}
+
+#clock h4
+{
+    padding:10px;
+    position: relative;
+    left:415px;
+    color:#568F87;
+}
+
+#clock p
+{
+    position: relative;
+    left:445px;
+    padding:10px;
+}
+
 .hidden 
 {
     display:none;
 }
 
+@media (max-width: 600px) 
+{
+  #plant, #clock 
+  { 
+    margin: 20px auto; padding: 12px 14px; 
+  }
+  .plant-section p 
+  { 
+    padding: 12px; font-size: 0.95rem; 
+  }
+  .plant-section input 
+  { 
+    max-width: 100%;
+  }
+  #sliderImage 
+  {
+    width: 160px; height: 160px; 
+  }
+}
+
+/*med*/
+@media (min-width: 601px) and (max-width: 1024px) 
+{
+  #plant, #clock 
+  { 
+    padding: 14px 18px;
+  }
+  .plant-section input 
+  { 
+    max-width: 600px; 
+  }
+  #sliderImage 
+  { 
+    width: 200px; height: 200px; 
+  }
+}
+
+
+@media (min-width: 1025px) 
+{
+  #sliderImage 
+  { 
+    width: 260px; height: 260px;
+  }
+}

@@ -47,3 +47,29 @@ slider.addEventListener("input", () => //event listener cred https://stackoverfl
     }
 
 });
+
+setInterval( () =>
+{
+    const current = new Date();
+    let hours = current.getHours();
+    let minutes = current.getMinutes();
+    let ampm = "am";
+
+
+    if (hours >= 12) 
+    {
+        ampm = "pm";
+        if (hours > 12) hours = hours - 12; //not 24hr time
+    }
+  if (hours === 0) 
+    {
+        hours = 12;
+    }
+
+  if (minutes < 10) 
+    {
+        minutes = "0" + minutes;
+    }
+
+    document.getElementById("clockTime").innerHTML =  hours + ":" + minutes+" "+ampm;
+});
