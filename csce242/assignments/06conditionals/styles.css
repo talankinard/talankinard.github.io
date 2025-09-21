@@ -121,46 +121,62 @@ img
 
 @media (max-width: 600px) 
 {
-  #plant, #clock 
-  { 
-    margin: 20px auto; padding: 12px 14px; 
-  }
-  .plant-section p 
-  { 
-    padding: 12px; font-size: 0.95rem; 
-  }
-  .plant-section input 
-  { 
-    max-width: 100%;
-  }
-  #sliderImage 
+  html, body 
   {
-    width: 160px; height: 160px; 
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
   }
-}
 
-/*med*/
-@media (min-width: 601px) and (max-width: 1024px) 
-{
   #plant, #clock 
-  { 
-    padding: 14px 18px;
+  {
+    position: static;
+    margin: 12px auto;
+    width: 100%;
+    max-width: 100%;
+    left: auto;
+    top: auto;
+    transform: none;
   }
+
   .plant-section input 
-  { 
-    max-width: 600px; 
+  {
+    position: static;
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    margin: 8px auto;
+    left: auto;
+    top: auto;
   }
-  #sliderImage 
-  { 
-    width: 200px; height: 200px; 
+
+  #clock h4, #clock p 
+  {
+    position: static;
+    text-align: center;
+    left: auto;
+    top: auto;
+  }
+
+  img, #sliderImage 
+  {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 10px auto;
+  }
+
+
+  #exercise-options 
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  #exercise-options .divider 
+  {
+    display: none;
   }
 }
 
-
-@media (min-width: 1025px) 
-{
-  #sliderImage 
-  { 
-    width: 260px; height: 260px;
-  }
-}
