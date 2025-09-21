@@ -1,0 +1,4 @@
+Saguaro , Austin Moffa , csce247/design_patterns/singleton/songs/Austin-Moffa-Saguaro.wav
+Sonate, Philippe Bray, csce247/design_patterns/singleton/songs/Sonate.wav
+Voodo Doll, Sean Ferree, csce247/design_patterns/singleton/songs/Sean-Ferree-Voodoo-Doll.wav
+Mazing, VME, csce247/design_patterns/singleton/songs/VME-Mazing.wav
