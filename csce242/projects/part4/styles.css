@@ -191,6 +191,7 @@ main, section
 
 .popular-grid
 {
+    padding-top: 20px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 56px 80px;        
