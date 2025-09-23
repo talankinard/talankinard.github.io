@@ -9,42 +9,77 @@ h1
 {
     text-align: center;
     padding:5px;
-    color:#064232;
+    color:yellow;
 }
 
 h3
 {
     text-align: center;
     padding: 10px;
-    color:#568F87;
+    color:yellow;
 }
 
 #btn-scene
 {
     position: relative;
     left:670px;
+    color: black;
+    background: yellow;
+    border: none;
 }
 
-.sun 
+#sun 
 {
     position: absolute;
     top:0;
     right:-100px;
-    display: flex;
     fill: yellow;
     border-radius: 100%;
 }
 
-.moon
+#moon
 {
     position: absolute;
     top:0;
     right:-150px;
-    display: flex;
     border-radius: 100%;
 }
 
-#hidden
+.hidden
 {
     display: none;
+}
+
+.cloud /* chat cite */
+{
+  position: absolute;
+  width: 80px;
+  height: 50px;
+  background: white;
+  border-radius: 40px;
+  box-shadow: -30px 10px 0 0 white, 
+              -15px -15px 0 0 white, 
+               15px -10px 0 0 white, 
+               30px 10px 0 0 white;
+}
+
+.tree { /* chat for both */
+  position: absolute;
+  width: 24px;
+  height: 70px;
+  background: sienna;   /* trunk */
+  bottom: 0;            /* sit on the bottom of #trees */
+  border-radius: 6px;
+  flex-wrap: wrap;
+}
+
+.tree::before {
+  content: "";
+  position: absolute;
+  bottom: 50px;         /* crown sits above trunk */
+  left: -28px;
+  width: 80px;
+  height: 80px;
+  background: green;
+  border-radius: 50%;
 }
