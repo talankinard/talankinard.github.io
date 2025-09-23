@@ -1,0 +1,50 @@
+body
+{
+    background: lightblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Structure */
+h1
+{
+    text-align: center;
+    padding:5px;
+    color:#064232;
+}
+
+h3
+{
+    text-align: center;
+    padding: 10px;
+    color:#568F87;
+}
+
+#btn-scene
+{
+    position: relative;
+    left:670px;
+}
+
+.sun 
+{
+    position: absolute;
+    top:0;
+    right:-100px;
+    display: flex;
+    fill: yellow;
+    border-radius: 100%;
+}
+
+.moon
+{
+    position: absolute;
+    top:0;
+    right:-150px;
+    display: flex;
+    border-radius: 100%;
+}
+
+#hidden
+{
+    display: none;
+}
