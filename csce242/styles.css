@@ -193,6 +193,16 @@ img
     background-color: #006d77;
 }
 
+.assignment-eight
+{
+    width:25%;
+    margin:20px;
+    padding:15px 15px;
+    background-color: white;
+    border-radius: 10%;
+    background-color: #006d77;
+}
+
 /* Projects Section */
 
 .projects
