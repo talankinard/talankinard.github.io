@@ -26,6 +26,10 @@ public class InOrderIterator implements Iterator<Song>
         }
         return position < song.length;
     }
+
+    /**
+     * @return the next song in order or null if none remain
+     */
         
     public Song next()
     {

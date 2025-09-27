@@ -22,7 +22,7 @@ public class Album
     }
 
     /**
-     * Populates the array with songs
+     * Populates the array with songs that are already given in driver
      * @param name
      * @param artist
      * @param length
