@@ -2,6 +2,12 @@ package iterator;
 import java.util.Iterator;
 import java.util.Random;
 
+
+/**
+ * Iterator for shuffling the order of the songs by returning each song once then removing it so its not duplicated.
+ * 
+ * @author talan
+ */
 public class ShuffleIterator implements Iterator<Song>
 {
     private Song[] song;
@@ -24,6 +30,10 @@ public class ShuffleIterator implements Iterator<Song>
         }
         return false;
     }
+
+    /**
+     * @return a random song from the album then removes it.
+     */
     
     public Song next()
     {

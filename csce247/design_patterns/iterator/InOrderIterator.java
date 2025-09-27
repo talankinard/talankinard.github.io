@@ -1,6 +1,12 @@
 package iterator;
 import java.util.Iterator;
 
+/**
+ * Iterator that displays the songs in order.
+ * Skips over null.
+ * 
+ * @author talan
+ */
 public class InOrderIterator implements Iterator<Song> 
 {
     private Song[] song;
