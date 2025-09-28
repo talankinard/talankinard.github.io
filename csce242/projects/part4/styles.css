@@ -21,16 +21,19 @@ body
    
 }
 
+img 
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
 h1
 {
     text-align: center;
     color: black;
     transition: transform ease;
-}
-
-h1:hover
-{
-    transform: scale(1.1); 
 }
 
 /* General nav */
@@ -288,7 +291,6 @@ main, section
 #left 
 { 
     background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
-    animation: pulseBlck 2s ease-in-out infinite; 
     color: black;
     padding: 40px;
     text-align: center;
@@ -298,26 +300,10 @@ main, section
 #right
 {
     background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
-    animation: pulseBlck 2s  ease-in-out infinite reverse;
     color: black;
     padding: 40px;
     text-align: center;
 }
-
-@keyframes pulseBlck
-{
-  0%, 100% 
-  {
-    box-shadow: inset 0 0 0 black; 
-  }
-  50%      
-  {
-    box-shadow: inset 0 0 20px black; 
-  }
-}
-
-
-
 
 
 #left h2, #right h2 
@@ -373,7 +359,7 @@ main, section
     background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
     color: #000; 
     padding: 32px 24px 40px; 
-    animation: pulseBlck 4s ease-in-out infinite;
+    
 
 }
 
@@ -382,21 +368,10 @@ main, section
     background: linear-gradient(to bottom, rgba(106,137,167,0.8), transparent);
     color: #fff; 
     padding: 32px 24px 40px; 
-    animation: pulseBlck 4s ease-in-out infinite;
+   
 
 }
 
-@keyframes pulseBlck
-{
-  0%, 100% 
-  {
-    box-shadow: inset 0 0 0 black; 
-  }
-  50%      
-  {
-    box-shadow: inset 0 0 20px black; 
-  }
-}
 
 
 #deals-left h2, #deals-right h2 
@@ -483,7 +458,6 @@ main, section
     padding: 40px 20px;
     text-align: center;
     border-bottom: 2px solid #ccc;
-    animation: pulseBlck 4s ease-in-out infinite;
 }
 
 .featured-deal h2 
@@ -539,6 +513,8 @@ main, section
 }
 
 
+
+
 /* News */
 
 #wrapper
@@ -547,7 +523,6 @@ main, section
     flex-direction: column;
     padding-top: 20px;
     background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
-    animation: pulseBlck 2s ease-in-out infinite; 
     
 }
 
@@ -559,7 +534,7 @@ main, section
     max-width: 1000px;
     width: 100%;
     margin: 0 auto;
-    padding: 0 16px;
+    
 }
 
 .news-left 
@@ -726,23 +701,29 @@ main, section
 
 /* Contac us */
 
-
 .contact-main 
 {
-          
     height: 50vh;               
-    background: rgba(136,189,242,0.5) url("images/spaceinvader.png") repeat center / 80px 80px;
-    color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
+    background: #F3F6FC;
+    border: 1px solid lightgrey
+
 }
+
+#contact-us-page {
+  background: linear-gradient(135deg, #eaf4ff 0%, #ffffff 60%);
+}
+
 
 .contact-main .contact-left 
 {
-    max-width: 50%;
-    padding-left:30px;
+    max-width: 560px;
+    padding: 0;           
+    margin: 0 auto;          
+    text-align: left;
+    
 }
 
 .contact-main h2 
@@ -753,11 +734,15 @@ main, section
     
 }
 
-#contact .contact-info
+#contact-us-page .contact-info
 {
-    padding-top:150px;
-    padding-left: 30px;
+    position: relative;
+    padding-top:185px;
+    padding-bottom:20px;
+    text-align: center;
     background: white;
+    border: 1px solid lightgrey;
+    
 }
 
 .contact-main .contact-right img 
@@ -776,9 +761,9 @@ main, section
 .contact-form 
 {
     margin-top: -15px;        
-    padding: 24px 32px 36px;
-    background: rgba(136,189,242,0.5) url("images/spaceinvader.png") repeat center / 80px 80px;
-    
+    padding: 24px 32px 36px;  
+    background: #F3F6FC;
+    border: 1px solid lightgrey
 }
 
 .contact-form h3 
