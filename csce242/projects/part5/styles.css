@@ -224,7 +224,8 @@ main, section
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 140px;           
+    width: auto;
+    height: auto;           
     margin-bottom: 20px;
     overflow: hidden; 
     border-radius: 6px;
@@ -233,6 +234,7 @@ main, section
 .pop img
 {
     transition: transform 0.4s ease;
+    
 }
 
 .pop h3
@@ -328,9 +330,9 @@ main, section
 
 .pop img 
 {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
+    width: auto;
+    height: auto;
+    object-fit: contain;
     border-radius: 4px;
     margin-bottom: 12px;
 }
@@ -413,11 +415,21 @@ main, section
 #deals-left .pop img, #deals-right .pop img 
 {
     display: block;
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
+    height: auto;
     border-radius: 4px;
     margin: 8px auto 0;
+}
+
+#mc-img , #cyberpunk-img
+{
+    height: 400px;
+    width: 400px;
+}
+
+#log-mouse , #key
+{
+    height: 400px;
+    width: 400px;
 }
 
 #deals-left .pop .old-price
@@ -717,12 +729,16 @@ main, section
 }
 
 
-.contact-main .contact-left 
+.contact-left 
 {
     max-width: 560px;
-    padding: 0;           
+    padding: 20px;           
     margin: 0 auto;          
     text-align: left;
+    background: white;
+    border:1px solid black;
+    border-radius: 20%;
+    
     
 }
 
@@ -1064,6 +1080,7 @@ main, section
     .contact-main .contact-left 
     {
         max-width: 100%;
+
     }
 
     .contact-main .contact-right img 
@@ -1310,3 +1327,7 @@ main, section
     margin-top: -150px;
 } 
 
+img
+{
+    object-fit: contain;
+}
