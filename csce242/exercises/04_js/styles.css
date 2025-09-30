@@ -276,6 +276,34 @@ footer p {
 }
 
 
+#dog-list
+{
+    display: flex;
+    gap: 300px;
+
+}
+
+.columns
+{
+    padding: 50px;
+}
+
+#dog-list img
+{
+    height:200px;
+    width: 150px;
+}
+
+#dog-list p
+{
+    display:flex;
+}
+
+.transparent
+{
+    visibility: hidden;
+}
+
 /* Medium screens */
 @media only screen and (min-width: 800px) { 
     .columns {

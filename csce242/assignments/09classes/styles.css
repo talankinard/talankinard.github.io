@@ -1,0 +1,23 @@
+:root
+{
+    --main-color:white;
+}
+
+body
+{
+    background: lightcoral;
+}
+
+h1
+{
+    text-align: center;
+    padding:5px;
+    color:var(--main-color);
+}
+
+h3
+{
+    text-align: center;
+    padding: 10px;
+    color:var(--main-color);
+}
