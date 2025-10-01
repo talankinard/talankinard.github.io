@@ -1,13 +1,24 @@
+:root
+{
+
+    --main-color: #747274;
+    --sub-color: #b9b7a7;
+    --text-color: black; 
+   /* --main-color:lightcoral;
+    --sub-color: #FFC2B2; 
+    --text-color:white; */
+}
+
 body
 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background: #006d77;
+    background: var(--main-color);
     min-height: 100vh; /* background fills at least viewport height */
 }
 
 #content
 {
-    background: #83c5be;
+    background: var(--sub-color);
     width:90%;  
     margin:auto;
     padding:1%;   /* get text away from edge */
@@ -16,19 +27,24 @@ body
 
 h1
 {
-    color: black;
+    color: var(--text-color);
     text-align: center;
     padding-top: 5px;
 }
 
 h1:hover
 {
-    text-shadow: 1px 1px 1px #83c5be;
+    text-shadow: 1px 1px 1px white;
 }
 
 h3
 {
-    color: #006d77;
+    color: var(--text-color);
+}
+
+h5
+{
+    color: var(--text-color);
 }
 
 #content h3:hover
@@ -38,13 +54,13 @@ h3
 
 p
 {
-    color: black;
+    color: var(--text-color);
 }
 
 a
 {
     text-decoration: none;
-    color:black;
+    color:var(--text-color);
 }
 
 a:hover
@@ -60,21 +76,22 @@ h5
 
 h5:hover
 {
-    text-shadow: 1px 1px 1px #83c5be;
+    text-shadow: 1px 1px 1px white;
 }
 
 #main-header
 {
-    background-color: #006d77;
+    background-color: var(--main-color);
     
 }
 
 .assignments 
 {
-    color: black;
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
+    
+
 }
 
 .assignments-header
@@ -122,7 +139,7 @@ h5:hover
     padding:15px 15px;
     background-color: white;
     border-radius: 10%;
-    background-color: #006d77;
+    background: var(--main-color);
 }
 
 .assignment-two
@@ -132,7 +149,7 @@ h5:hover
     padding:15px 15px;
     background-color: white;
     border-radius: 10%;
-    background-color: #006d77;
+    background: var(--main-color);
 }
 
 .assignment-three
@@ -142,8 +159,7 @@ h5:hover
     padding:15px 15px;
     background-color: white;
     border-radius: 10%;
-    background-color: #006d77;
-}
+    background: var(--main-color);}
 
 img
 {
@@ -160,7 +176,7 @@ img
     padding:15px 15px;
     background-color: white;
     border-radius: 10%;
-    background-color: #006d77;
+    background: var(--main-color);
 }
 
 .assignment-five
@@ -170,7 +186,7 @@ img
     padding:15px 15px;
     background-color: white;
     border-radius: 10%;
-    background-color: #006d77;
+    background: var(--main-color);
 }
 
 .assignment-six
@@ -180,7 +196,7 @@ img
     padding:15px 15px;
     background-color: white;
     border-radius: 10%;
-    background-color: #006d77;
+    background: var(--main-color);
 }
 
 .assignment-seven
@@ -190,7 +206,7 @@ img
     padding:15px 15px;
     background-color: white;
     border-radius: 10%;
-    background-color: #006d77;
+    background: var(--main-color);
 }
 
 .assignment-eight
@@ -200,14 +216,23 @@ img
     padding:15px 15px;
     background-color: white;
     border-radius: 10%;
-    background-color: #006d77;
+    background: var(--main-color);
+}
+
+.assignment-nine
+{
+    width:25%;
+    margin:20px;
+    padding:15px 15px;
+    background-color: white;
+    border-radius: 10%;
+    background: var(--main-color);
 }
 
 /* Projects Section */
 
 .projects
 {
-    color: black;
     display: flex;
     flex-wrap:wrap;
     justify-content: center;
@@ -232,7 +257,7 @@ img
     padding:15px 15px;
     background-color: white;
     border-radius: 10%;
-    background-color: #006d77;
+    background-color: var(--main-color);
 }
 
 .wireframes
@@ -242,7 +267,7 @@ img
     padding:15px 15px;
     background-color: white;
     border-radius: 10%;
-    background-color: #006d77;
+    background-color: var(--main-color);
 }
 
 .website
@@ -252,7 +277,7 @@ img
     padding:15px 15px;
     background-color: white;
     border-radius: 10%;
-    background-color: #006d77;
+    background-color: var(--main-color);
 }
 
 .projects h4:hover
