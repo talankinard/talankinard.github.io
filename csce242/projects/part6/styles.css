@@ -1,0 +1,1307 @@
+:root
+{
+    --storm-ink: #384959;   
+    --storm-slate: #6A89A7; 
+    --storm-sky: #88BDF2;   
+    --storm-cloud: #BDDDFC;
+    --text-dark: #0f141a;
+    --text-light: #f5f7fb;
+    --active-color: #88BDF2;
+}
+
+html,body
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+   
+}
+
+img 
+{
+    max-width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+h1
+{
+    text-align: center;
+    color: black;
+    transition: transform ease;
+}
+
+/* General nav */
+
+#whole-nav
+{
+    background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    border-bottom: 2px solid black;
+    animation: pulseGrid 10s ease-in-out infinite;
+}
+
+@keyframes pulseGrid 
+{
+    0% { box-shadow: 0 0 12px var(--storm-sky) inset; }
+    50% { box-shadow: 0 0 28px #ff007a inset; }
+    100% { box-shadow: 0 0 12px var(--storm-sky) inset; }
+}
+
+
+
+#whole-nav h1, #whole-nav h2, #whole-nav p
+{
+    margin:0;
+}
+
+main, section 
+{
+    margin-top: 0;
+    padding-top: 16px;
+}
+
+#top-nav ul
+{
+    list-style-type: none;
+    display: flex;
+    
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+#top-nav a
+{
+    text-decoration: none;
+    color: black;      
+    margin-left: 20px;
+    font-size: 18px;
+    
+}
+
+/* to represent current page */
+#top-nav a.active 
+{
+    color: var(--active-color);            
+    border-bottom: 2px solid var(--active-color);
+    font-weight: bold;
+}
+
+
+/* Sub nav */
+#small-nav
+{
+    position: absolute;     
+    top: 12px;             
+    right: 18px;
+    display: flex;
+    gap: 18px;
+    font-size: 14px;
+            
+}
+
+#small-nav a
+{
+    color: black;
+    padding: 6px 10px;
+    border: 1px solid black;
+    border-radius: 10px;
+    background: white;
+    text-decoration: none;
+}
+
+#small-nav a:hover 
+{
+    background:lightgrey;
+    box-shadow: 0 2px 8px;
+    
+  
+}
+
+/* Below Nav */
+
+#home h2
+{
+    position: static;       
+    margin: 20px 0 6px;
+    text-align: center;
+    transition: transform 0.3 ease;
+}
+
+#home h2:hover
+{
+    transform: scale(1.1); /* https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
+}
+
+.popular-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(260px, 1fr));
+    gap: 10px 0px;
+    justify-items: center;
+    max-width: 500px;
+    height: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    width: fit-content;
+    
+}
+
+
+.game-img 
+{
+    max-width: 100%;
+    max-height: 120px;        
+    object-fit: contain;
+}
+
+.catalog
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px 0px; 
+    align-items: start;
+    justify-items: center;
+        background: linear-gradient(135deg, rgba(0,240,255,0.15), rgba(255,0,122,0.15));
+
+}
+
+.pop
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;      
+    text-align: center;
+    height: auto;     
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;  
+    position: relative;
+    overflow: hidden; 
+}
+
+.pop .image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: auto;           
+    margin-bottom: 20px;
+    overflow: hidden; 
+    border-radius: 6px;
+}
+
+.pop img
+{
+    transition: transform 0.4s ease;
+    
+    
+}
+
+.pop h3
+{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 8px 0;
+    color: #000;
+}
+
+.pop p
+{
+    font-size: 14px;
+    line-height: 1.5;
+    color:black;
+    max-width: 320px;  
+}
+
+/* cite for hover/after https://www.30secondsofcode.org/css/s/hover-shadow-box-animation/*/
+.pop:hover 
+{
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 0 20px rgba(0, 240, 255, 0.6), 0 0 40px rgba(255, 0, 122, 0.4); 
+}
+
+.pop:hover img
+{
+    transform: scale(1.1);
+}
+
+.pop::after 
+{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(0,240,255,0.15), rgba(255,0,122,0.15));
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pop:hover::after 
+{
+    opacity: 1;
+}
+
+/* Browse */
+
+.catalog
+{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    
+}
+
+#left 
+{ 
+    background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
+    color: black;
+    padding: 40px;
+    text-align: center;
+    
+}
+
+#right
+{
+    background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
+    color: black;
+    padding: 40px;
+    text-align: center;
+}
+
+
+#left h2, #right h2 
+{
+    font-size: 32px;
+    margin-bottom: 32px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    grid-column: 1 / -1; /* h2 across columns */
+    margin: 24px 0 32px; 
+}
+
+#left, #right 
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    gap: 40px;
+    justify-items: center;
+    padding: 0 40px 40px;
+}
+
+
+.pop img 
+{
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    border-radius: 4px;
+    margin-bottom: 12px;
+}
+
+#left .pop h3 
+{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+#right .pop h3 
+{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+
+/* Deals */
+
+#deals-left 
+{ 
+    margin: 0;      
+    background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
+    color: #000; 
+    padding: 32px 24px 40px; 
+    
+
+}
+
+#deals-right 
+{ 
+    background: linear-gradient(to bottom, rgba(106,137,167,0.8), transparent);
+    color: #fff; 
+    padding: 32px 24px 40px; 
+   
+
+}
+
+
+
+#deals-left h2, #deals-right h2 
+{
+    text-align: center;
+    margin: 0 0 24px;
+    font-size: 32px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+#deals-left .grid, #deals-right .grid 
+{
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px 80px;
+    justify-items: center;
+}
+
+#deals-left .pop, #deals-right .pop
+{
+    height: auto;
+    min-height: 320px
+}
+
+#deals-left .pop h3, #deals-right .pop h3 
+{
+    margin: 0 0 12px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+#deals-right .pop h3 
+{
+    margin: 0;
+    color: black; 
+}
+
+#deals-left .pop img, #deals-right .pop img 
+{
+    display: block;
+    height: auto;
+    border-radius: 4px;
+    margin: 8px auto 0;
+}
+
+#mc-img , #cyberpunk-img
+{
+    height: 400px;
+    width: 400px;
+}
+
+#log-mouse , #key
+{
+    height: 400px;
+    width: 400px;
+}
+
+#deals-left .pop .old-price
+{
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 6px;
+}
+
+#deals-left .pop .new-price
+{
+  color: #28a745;
+  font-weight: bold;
+}
+
+#deals-right .pop .old-price
+{
+  text-decoration: line-through;
+  color: #999;
+  margin-right: 6px;
+}
+
+#deals-right .pop .new-price
+{
+  color: #28a745;
+  font-weight: bold;
+}
+
+/* bottom sec taller */
+#deals-left, #deals-right 
+{
+    min-height: 50vh;
+}
+
+.featured-deal 
+{
+    background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
+    padding: 40px 20px;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
+}
+
+.featured-deal h2 
+{
+    font-size: 32px;
+    margin-bottom: 24px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.featured-content 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap; 
+}
+
+.featured-content img 
+{
+    width: fit-content;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.deal-info h3 
+{
+    font-size: 24px;
+    margin: 0 0 12px;
+}
+
+.old-price 
+{
+    text-decoration: line-through;
+    color: #999;
+    margin-right: 12px;
+}
+
+.new-price 
+{
+    font-weight: bold;
+    color: #28a745;
+    font-size: 20px;
+}
+
+.deal-expire 
+{
+    margin-top: 8px;
+    color: #d00;
+    font-weight: bold;
+}
+
+
+
+
+/* News */
+
+#wrapper
+{
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
+    
+}
+
+.news-page 
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+    
+}
+
+.news-left 
+{
+    background: none;
+    color: #000;
+    width: 100%;
+    padding: 0 0 12px 0;
+}
+
+.news-left h2 
+{
+    margin: 0;
+    font-size: 32px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.news-right 
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* credit https://stackoverflow.com/questions/52764726/css-grid-auto-fit-with-max-content */
+    gap: 24px;
+    width: 100%;
+    justify-items: center; 
+}
+
+.news-item 
+{
+    text-align: center;
+    max-width: 340px;
+}
+
+.news-item img 
+{
+    display: block;
+    margin: 0 auto 10px;
+    width: 100%;
+    max-width: 300px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.newsletter-section 
+{
+    margin-top: 110px;           
+    background: #111;
+    color: #fff;
+    padding: 28px 16px;
+    text-align: center;
+}
+
+.newsletter-section h2 
+{
+    margin: 0 0 10px;
+    font-size: 22px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.newsletter-section p 
+{ 
+    margin: 0 0 14px; 
+    color: white; 
+}
+
+.newsletter-section form 
+{
+    display: flex;
+    justify-content: center;
+    max-width: 460px;
+    margin: 0 auto;
+    gap: 8px;
+}
+
+.newsletter-section input 
+{
+    flex: 1;
+    padding: 
+    10px;
+    border: none; 
+    border-radius: 4px;
+}
+
+.newsletter-section button 
+{
+    padding: 10px 16px; 
+    border: none; 
+    border-radius: 4px;
+    background: red; 
+    color: white; 
+    font-weight: 600; 
+}
+
+/* FAQ */
+
+.faq 
+{
+    background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px 16px 0px;
+  
+
+  
+}
+
+.faq h2 
+{
+    text-align: center;
+    font-size: 32px;
+    
+}
+
+.faq-item 
+{
+    border: 1px solid black;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    background: #fff;
+}
+
+/* Q and A rows */
+.faq-question, .faq-answer 
+{
+    display: grid;
+    grid-template-columns: 48px 1fr;
+    gap: 12px;
+    padding: 14px 16px;
+    align-items: start;
+}
+
+.faq-question 
+{
+    background: white;
+    border-bottom: 1px solid black;
+    font-weight: 600;
+}
+
+.faq-answer
+{
+    background: white;
+}
+
+.bubble 
+{
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid black;
+    border-radius: 50%;
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    background: white;
+}
+
+.faq p 
+{
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Contac us */
+
+.contact-main 
+{
+    height: 50vh;               
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #F3F6FC;
+    border: 1px solid lightgrey
+
+}
+
+#contact-us-page {
+  background: linear-gradient(135deg, #eaf4ff 0%, #ffffff 60%);
+}
+
+
+.contact-left 
+{
+    max-width: 560px;
+    padding: 20px;           
+    margin: 0 auto;          
+    text-align: left;
+    background: white;
+    border:1px solid black;
+    border-radius: 20%;
+    
+    
+}
+
+.contact-main h2 
+{
+    margin: 0;
+    font-size: 42px;
+    line-height: 1.1;
+    
+}
+
+#contact-us-page .contact-info
+{
+    position: relative;
+    padding-top:185px;
+    padding-bottom:20px;
+    text-align: center;
+    background: white;
+    border: 1px solid lightgrey;
+    
+}
+
+.contact-main .contact-right img 
+{
+    display: block;
+    width: 460px;
+    height: auto;
+}
+
+.contact-right
+{
+    padding-right: 100px;
+    
+}
+
+.contact-form 
+{
+    margin-top: -15px;        
+    padding: 24px 32px 36px;  
+    background: #F3F6FC;
+    border: 1px solid lightgrey
+}
+
+.contact-form h3 
+{
+    margin: 0 0 14px;
+    text-align: center;
+    font-size: 26px;
+}
+
+.contact-form form 
+{
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.contact-form label 
+{
+    display: block;
+    font-size: 14px;
+    margin: 12px 0 6px;
+}
+
+.contact-form input, .contact-form textarea 
+{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    border: 1px solid black;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.contact-form button 
+{
+    display: block;
+    width: 160px;
+    margin: 6px auto 0;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background: red;
+    color: white;
+    font-weight: 600;
+}
+
+.about-more 
+{
+    padding: 40px 24px;
+    text-align: center;
+    color: black;
+}
+
+.about-more h2 
+{
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+}
+
+.about-more p 
+{
+
+    max-width: 720px;
+    margin: 0 auto 16px;
+    line-height: 1.6;
+    font-size: 18px;
+}
+
+/* cart */
+
+
+.login
+{
+   width:600px;
+    background: white;
+    border: 1px solid black;
+    padding: 28px 36px 32px 36px;
+}
+
+.title
+{
+    margin: 0 0 8px 0;
+    font-size: 40px;
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.subtitle
+{
+    margin: 0 0 22px 0;
+    font-size: 18px;
+}
+
+.field-label
+{
+    display: block;
+    margin: 0 0 8px 0;
+    font-weight: 600;
+}
+
+.text-input
+{
+    width: 100%;
+    padding: 16px 14px;
+    font-size: 18px;
+    border: 1px solid #bdbdbd;
+    border-radius: 2px;
+    margin-bottom: 22px;
+}
+
+.acc
+{
+    margin: 0 0 10px 0;
+}
+
+.primary-btn
+{
+    width: 100%;
+    padding: 16px;
+    font-size: 24px;
+    border: 1px solid #bdbdbd;
+    background: #f7f7f7;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.link
+{
+    display: inline-block;
+    color: #222;
+    text-decoration: underline;
+    margin-top: 6px;
+
+}
+
+#login #login-wrapper {
+    position: static;
+    min-height: 670px;
+    display: grid;
+    place-items: center;
+    background: rgba(136,189,242,0.5) url("images/spaceinvader.png") repeat center / 80px 80px;
+    padding: 40px 16px;
+    box-sizing: border-box;
+}
+
+.cart-item img, .cart-img
+ {
+    width: 200px;
+    height: 100px;
+    object-fit: cover;  
+    border-radius: 4px;
+    display: block;
+    border: solid 1px black;
+}
+
+/* create acc */
+
+.cancel-return
+{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* cart */
+
+
+
+.cart-panel 
+{
+    width: min(860px, 92vw);
+    background: #fff;
+    border: 1px solid black;
+    padding: 28px 36px 36px;
+}
+
+
+.cart-grid 
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 36px 64px;
+    justify-items: start;
+    margin-top: 12px;
+}
+
+.item-title 
+{ 
+    font-size: 28px; 
+    margin: 0; 
+}
+
+
+.cart-img 
+{
+    width: 160px;
+    height: 90px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+
+#whole-nav
+{
+    padding-top: 20px;
+    min-height: 80px;  
+}
+
+#toggle-nav 
+{
+    display: none;        
+    cursor: pointer;
+    padding: 6px;
+}
+#toggle-nav div 
+{
+    width: 25px;
+    height: 3px;
+    background: black;
+    margin: 5px 0;
+}
+
+
+/* med resolutoons */
+@media (max-width: 900px) 
+{
+    #top-nav ul 
+    {
+        position: static;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+        padding: 0 12px;
+    }
+
+    hr 
+    {
+        position: static;
+        width: 100%;
+        margin: 0;
+    }
+
+    #small-nav 
+    {
+        top: 8px;
+        right: 10px;
+        gap: 12px;
+        font-size: 13px;
+    }
+
+    .popular-grid
+    {
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 700px;
+        padding: 0 16px;
+    }
+
+    .catalog 
+    {
+        grid-template-columns: 1fr 1fr;
+        margin-top: 0;
+    }
+
+    #left, #right 
+    {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 0 20px 28px;
+    }
+
+    #deals-left .grid, #deals-right .grid 
+    {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 28px 40px;
+    }
+
+    .news-page 
+    {
+        padding: 0 12px;
+    }
+
+    .faq 
+    {
+        margin:0;
+        padding: 0 16px;
+    }
+
+    .contact-main
+     {
+        height: auto;
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+        padding: 20px 16px;
+    }
+
+    .contact-main .contact-left 
+    {
+        max-width: 100%;
+
+    }
+
+    .contact-main .contact-right img 
+    {
+        width: 100%;
+        padding-right: 0;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    
+    #login #login-wrapper 
+    {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: #ececec;
+        padding: 32px 16px;
+        box-sizing: border-box;
+    }
+
+    .cart-panel 
+    {
+        width: min(860px, 94vw);
+    }
+
+    .cart-grid 
+    {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 28px 40px;
+    }
+}
+
+/* small */
+@media (max-width: 560px) 
+{
+    #toggle-nav 
+    {
+        display: block;
+    }
+
+    #nav-items.hide-small 
+    {
+    display: none;
+    }
+
+    #nav-items 
+    {
+    display: block;
+    text-align: center;
+    }
+
+    #nav-items li 
+    {
+    display: block;
+    margin: 10px 0;
+    }
+
+    #top-nav ul 
+    {
+    flex-direction: column;  
+    align-items: center;      
+    gap: 12px;                
+    padding: 12px 0;
+   }
+
+   #top-nav a 
+   {
+        display: block;
+        font-size: 16px;
+        margin: 0;                
+   }
+    #small-nav 
+    {
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    #home h2 
+    {
+        position: static;
+        margin: 16px 0;
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .popular-grid 
+    {
+        grid-template-columns: 1fr;
+        max-width: 360px;
+        padding: 0 12px;
+        gap: 28px;
+    }
+
+    .catalog 
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #left, #right
+     {
+
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 16px 24px;
+    }
+
+    #deals-left .grid, #deals-right .grid 
+    {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .news-item
+     {
+        max-width: 320px;
+    }
+
+    .newsletter-section form 
+    {
+        max-width: 100%;
+        padding: 0 12px;
+    }
+
+    .faq-question, .faq-answer 
+    {
+        grid-template-columns: 36px 1fr;
+        padding: 12px;
+        gap: 10px;
+    }
+
+    .contact-form form 
+    {
+        max-width: 100%;
+        padding: 0 8px;
+    }
+
+    .cart-panel, .login 
+    {
+        width: min(560px, 94vw);
+        padding: 20px 16px 24px;
+    }
+
+    .cart-grid 
+    {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .item-title 
+    {
+        font-size: 22px;
+    }
+
+    .text-input 
+    {
+        padding: 14px 12px;
+        font-size: 16px;
+    }
+}
+
+/* large */
+@media (min-width: 1400px) 
+{
+  .popular-grid, #deals-left .grid, #deals-right .grid, .news-page, .faq, .contact-main, .cart-panel, .login 
+  {
+    max-width: none;
+    margin: 0;
+  }
+
+  body 
+  { 
+    font-size: 18px;
+  }
+  h1 
+  { 
+    font-size: 40px; 
+  }
+  h2 
+  { 
+    font-size: 32px;
+  }
+
+  #top-nav ul 
+  {
+    position: static;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  
+  #deals-left, #deals-right, .news-page, .faq, .cart-panel,.login
+   {
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+  .contact-main 
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media (min-width: 1101px) 
+{
+  hr {
+    display: block;
+    position: absolute;
+    top: 120px;
+    left: 0;
+    width: 100vw;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #000;
+  }
+}
+
+@media (max-width: 1100px) 
+{
+  hr {
+    display: block;
+    position: static;
+    width: 100%;
+    margin: 0;
+    border: none;
+    border-top: 1px solid #000;
+  }
+}
+
+
+.contact-main
+{
+     width: 100%; 
+     max-width: none;
+    margin: 0; 
+    margin-top: 0;
+}
+.contact-info h3:first-child 
+{
+    margin-top: -150px;
+} 
+
+img
+{
+    object-fit: contain;
+}

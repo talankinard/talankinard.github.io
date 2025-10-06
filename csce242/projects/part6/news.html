@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>PixelPort</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div id="whole-nav">
+        <h1>PixelPort</h1>
+        <div id="toggle-nav">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        <div id="small-nav">
+            <a href="cart.html" class="cart-link">Cart</a>
+            <a href="login.html" class="signin-link">Sign In</a>
+        </div>
+        <nav id="top-nav">
+            <ul id="nav-items" class="hide-small">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="browse.html">Browse</a></li>
+            <li><a href="deals.html">Deals</a></li>
+            <li><a href="news.html" class="active">News</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact-us.html">Contact/About</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div id="wrapper">
+        <main class="news-page">
+            <div class="news-left">
+                <h2>News</h2>
+            </div>
+            <div class="news-right">
+                <article class="news-item">
+                    <img src="images/pixelport.png" alt="News Image">
+                    <h3>Exciting Update for PixelPort Users</h3>
+                    <p>We’ve been hard at work upgrading your PixelPort experience! This update brings both style improvements and new features to make browsing and buying games feel smoother than ever.</p>
+                </article>
+                <article class="news-item">
+                    <img src="images/gamerel.jpg" alt="News Image">
+                    <h3>New Game Releases This Month</h3>
+                    <p>Stay up to date with the freshest titles hitting the market. From blockbuster AAA adventures to innovative indie gems, PixelPort keeps you in the loop with the latest arrivals. Discover what’s hot right now, compare prices, and find your next favorite game the moment it launches.</p>
+                </article>
+                <article class="news-item">
+                    <img src="images/teamwork.jpg" alt="News Image">
+                    <h3>Behind the Scenes at PixelPort</h3>
+                    <p>Take a peek at the passion and teamwork that power PixelPort — from coding and design to the ideas that bring our marketplace to life.</p>
+                </article>
+            </div>
+        </main>
+        <section class="newsletter-section">
+            <div class="newsletter-content">
+                <h2>Subscribe to The PixelPort Newsletter</h2>
+                <p>Stay updated with the latest news and deals!</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button> <!-- credit https://stackoverflow.com/questions/6619299/put-text-in-textbox -->
+            </form>
+            </div>
+        </section>
+        </div>
+        <script src="toggle-nav.js" defer></script>
+    </body>
+</html>

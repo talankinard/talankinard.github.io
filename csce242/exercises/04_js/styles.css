@@ -304,6 +304,14 @@ footer p {
     visibility: hidden;
 }
 
+/* JSON */
+
+.shoe ul
+{
+    color: black;
+    
+}
+
 /* Medium screens */
 @media only screen and (min-width: 800px) { 
     .columns {
