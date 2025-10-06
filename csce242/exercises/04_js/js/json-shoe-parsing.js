@@ -1,6 +1,6 @@
 const getShoes = async() =>
 {
-    const url = "https://portiaportia.github.io/json/shoes.json";
+    const url = "";
 
     try
     {
