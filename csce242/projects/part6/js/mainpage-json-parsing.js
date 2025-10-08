@@ -1,6 +1,7 @@
 const getPopItems = async() =>
 {
-    const url = "https://talankinard.github.io/csce242/projects/part6/json/mainpage.json";
+    const base = "https://talankinard.github.io/csce242/projects/part6/json/mainpage.json";
+    const url = `${base}?v=${Date.now()}`; //chatgpt told me to add to update my json live
 
     try
     {
