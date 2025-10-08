@@ -70,5 +70,41 @@
         [
             "So much fun!","A bit pricey but totally worth it!"
         ]
+    },
+    {
+        "_id":7,
+        "name":"Hallow Knight Silksong",
+        "img":"hallowknightsilk.webp",
+        "price":"$19.99",
+        "description": "An action-adventure Metroidvania, the sequel to Hollow Knight, where players control Hornet on a journey through the unfamiliar land of Pharloom",
+        "rating":"4.9",
+        "reviews":
+        [
+            "GOTY!"
+        ]
+    },
+    {
+        "_id":8,
+        "name":"Expedition 33",
+        "img":"clairobscurexp33.webp",
+        "price":"$49.99",
+        "description": "A 2025 turn-based RPG developed by Sandfall Interactive, set in a dark fantasy Belle Époque world where the Paintress erases people at an ever-decreasing age.",
+        "rating":"4.9",
+        "reviews":
+        [
+            "Best story out of any game, made me cry!","Insane twists and story, goty for sure."
+        ]
+    },
+    {
+        "_id":9,
+        "name":"Elgato Stream Deck",
+        "img":"streamdeck.png",
+        "price":"$119.99",
+        "description": "A programmable desktop controller, most notably from Elgato, that features physical, customizable LCD keys to trigger actions and control various applications and accessories.",
+        "rating":"4.0",
+        "reviews":
+        [
+            "Very helpful for streaming, buggy sometimes."
+        ]
     }
 ]

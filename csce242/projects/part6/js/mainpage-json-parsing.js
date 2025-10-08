@@ -14,51 +14,88 @@ const getPopItems = async() =>
 
 };
 
-const showGames = async() =>
+const showGames = async () => 
 {
     const popItems = await getPopItems();
-    const popItemsDiv = document.querySelector(".popular-grid");
+    const grid = document.querySelector(".popular-grid");
 
+  
 
     popItems.forEach((game) => 
     {
-        const section = document.createElement("section");
-        section.classList.add("pop");
+        const card = document.createElement("section");
+        card.className = "pop";
 
         const h3 = document.createElement("h3");
-        h3.innerHTML = game.name;
-        section.append(h3);
+        h3.textContent = game.name;
+        card.appendChild(h3);
+
+        const imgBox = document.createElement("div");
+        imgBox.className = "img-box";
 
         const img = document.createElement("img");
         img.src = `json/images/${game.img}`;
         img.alt = game.name;
-        section.append(img);
+
+        imgBox.appendChild(img);
+        card.appendChild(img);
+        
+        //if this button is clicked displays the other details of the item
+        const btn = document.createElement("button");
+        btn.textContent = "More Details";
+        btn.className = "btn-details";
+        card.appendChild(btn);
+
+        //created in a hidden div
+        const details = document.createElement("div");
+        details.className = "card-details hidden";
 
         const desc = document.createElement("p");
-        desc.innerHTML = game.description;
-        section.append(desc);
+        desc.textContent = game.description;
+        details.appendChild(desc);
 
         const price = document.createElement("p");
-        price.innerHTML = `Price: ${game.price}`;
-        section.append(price);
+        price.textContent = "Price: " + game.price;
+        details.appendChild(price);
 
         const rating = document.createElement("p");
-        rating.innerHTML = `Rating: ${game.rating}`;
-        section.append(rating);
+        rating.textContent = "Rating: " + game.rating;
+        details.appendChild(rating);
+
+        //review list if existw
+        if (game.reviews) {
+        const reviewsTitle = document.createElement("p");
+        reviewsTitle.innerHTML = "<strong>Reviews:</strong>";
+        details.appendChild(reviewsTitle);
 
         const ul = document.createElement("ul");
-        game.reviews.forEach((review) => 
+        for (let i = 0; i < game.reviews.length; i++) 
         {
             const li = document.createElement("li");
-            li.innerHTML = review;
-            ul.append(li);
-        });
-        section.append(ul);
+            li.textContent = game.reviews[i];
+            ul.appendChild(li);
+        }
+        details.appendChild(ul);
+    }
 
-        popItemsDiv.append(section);
+    card.appendChild(details);
 
-
+    btn.addEventListener("click", () => 
+    {
+      if (details.classList.contains("hidden")) 
+        {
+        details.classList.remove("hidden");
+        btn.textContent = "Hide Details";
+        } 
+        else 
+        {
+        details.classList.add("hidden");
+        btn.textContent = "More Details";
+      }
     });
-}
+
+    grid.appendChild(card);
+  });
+};
 
 showGames();

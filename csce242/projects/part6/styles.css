@@ -140,10 +140,7 @@ main, section
     transition: transform 0.3 ease;
 }
 
-#home h2:hover
-{
-    transform: scale(1.1); /* https://developer.mozilla.org/en-US/docs/Web/CSS/transform */
-}
+
 
 .popular-grid 
 {
@@ -152,7 +149,7 @@ main, section
     gap: 10px 0px;
     justify-items: center;
     max-width: 500px;
-    height: 800px;
+    height: auto;
     margin: 0 auto;
     padding: 20px;
     width: fit-content;
@@ -189,7 +186,7 @@ main, section
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;  
     position: relative;
-    overflow: hidden; 
+    overflow: visible; 
 }
 
 .pop .image
@@ -241,6 +238,7 @@ main, section
 
 .pop::after 
 {
+    pointer-events: none;
     content: "";
     position: absolute;
     inset: 0;
@@ -288,7 +286,7 @@ main, section
     margin-bottom: 32px;
     text-decoration: underline;
     text-underline-offset: 6px;
-    grid-column: 1 / -1; /* h2 across columns */
+    grid-column: 1 / -1; 
     margin: 24px 0 32px; 
 }
 
@@ -299,16 +297,6 @@ main, section
     gap: 40px;
     justify-items: center;
     padding: 0 40px 40px;
-}
-
-
-.pop img 
-{
-    width: auto;
-    height: auto;
-    object-fit: contain;
-    border-radius: 4px;
-    margin-bottom: 12px;
 }
 
 #left .pop h3 
@@ -975,6 +963,98 @@ main, section
     height: 3px;
     background: black;
     margin: 5px 0;
+}
+
+.hidden
+{
+    display:none;
+}
+
+.card-details 
+{
+    background: rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    line-height: 1.6;
+    font-size: 15px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top:-20px;
+}
+
+.card-details p 
+{
+    margin: 8px 0;
+}
+
+.card-details strong 
+{
+    display: block;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.card-details ul 
+{
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 30px;
+    margin-top: 8px;
+    margin-bottom: 0;
+}
+
+.card-details li 
+{
+     margin-bottom: 4px;
+}
+
+.btn-details 
+{
+    margin-top: 10px;
+    padding: 6px 14px;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: #f5f5f5;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.btn-details:hover 
+{
+    background: white;
+    transform: scale(1.03);
+}
+
+.pop
+{
+    height: auto !important;   
+    overflow: visible !important;
+}
+
+.img-box 
+{
+    width: 500px;          
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 10px;  
+
+}
+
+.popular-grid img 
+{
+    width: 500px !important;
+    height: 200px !important;
+    display: block;
+    padding-bottom: 20px;
+}
+
+.popular-grid button
+{
+    margin-bottom:50px;
 }
 
 
