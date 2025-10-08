@@ -140,7 +140,18 @@ main, section
     transition: transform 0.3 ease;
 }
 
+#popular-grid-wrap
+{
+    background: linear-gradient(135deg, rgba(0,240,255,0.15), rgba(255,0,122,0.15));
+    margin-top: -20px;
 
+}
+
+#popular-grid-wrap h2
+{
+    padding-top:10px;
+
+}
 
 .popular-grid 
 {
@@ -171,7 +182,7 @@ main, section
     gap: 20px 0px; 
     align-items: start;
     justify-items: center;
-        background: linear-gradient(135deg, rgba(0,240,255,0.15), rgba(255,0,122,0.15));
+     background: linear-gradient(135deg, rgba(0,240,255,0.15), rgba(255,0,122,0.15));
 
 }
 
@@ -264,7 +275,6 @@ main, section
 
 #left 
 { 
-    background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
     color: black;
     padding: 40px;
     text-align: center;
@@ -273,7 +283,6 @@ main, section
 
 #right
 {
-    background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
     color: black;
     padding: 40px;
     text-align: center;
@@ -299,6 +308,16 @@ main, section
     padding: 0 40px 40px;
 }
 
+#left .pop img,
+#right .pop img 
+{
+    width: min(260px, 90%);
+    height: 200px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
 #left .pop h3 
 {
     margin: 0;
@@ -317,10 +336,14 @@ main, section
 
 /* Deals */
 
+#deals-container
+{
+    background: linear-gradient(135deg, rgba(0,240,255,0.15), rgba(255,0,122,0.15));
+}
+
 #deals-left 
 { 
     margin: 0;      
-    background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
     color: #000; 
     padding: 32px 24px 40px; 
     
@@ -329,11 +352,8 @@ main, section
 
 #deals-right 
 { 
-    background: linear-gradient(to bottom, rgba(106,137,167,0.8), transparent);
     color: #fff; 
     padding: 32px 24px 40px; 
-   
-
 }
 
 
@@ -428,7 +448,6 @@ main, section
 
 .featured-deal 
 {
-    background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
     padding: 40px 20px;
     text-align: center;
     border-bottom: 2px solid #ccc;
@@ -444,19 +463,21 @@ main, section
 
 .featured-content 
 {
-    display: flex;
+    
     justify-content: center;
     align-items: center;
     gap: 40px;
-    flex-wrap: wrap; 
+   
 }
 
 .featured-content img 
 {
-    width: fit-content;
-    height: 250px;
-    object-fit: cover;
+    width: 800px;
+    height: auto;
+    object-fit: contain;
     border-radius: 8px;
+    display: block;
+    margin: 0 auto;
 }
 
 .deal-info h3 
@@ -609,9 +630,9 @@ main, section
 .faq 
 {
     background: linear-gradient(to bottom, rgba(136,189,242,0.5), transparent);
-    min-height: 100vh;
-    margin: 0;
-    padding: 20px 16px 0px;
+    min-height: auto;
+    margin-top: 0;
+    padding: 12 16px 16px;
   
 
   
@@ -621,6 +642,8 @@ main, section
 {
     text-align: center;
     font-size: 32px;
+    margin-top: 0px;
+    padding-top:10px;
     
 }
 
@@ -715,7 +738,7 @@ main, section
 #contact-us-page .contact-info
 {
     position: relative;
-    padding-top:185px;
+    padding-top:24px;
     padding-bottom:20px;
     text-align: center;
     background: white;
@@ -1105,6 +1128,8 @@ main, section
         padding: 0 20px 28px;
     }
 
+    
+
     #deals-left .grid, #deals-right .grid 
     {
         grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1125,7 +1150,8 @@ main, section
     .contact-main
      {
         height: auto;
-        flex-direction: column;
+        flex-direction: row;
+        overflow-x: hidden;
         text-align: center;
         gap: 16px;
         padding: 20px 16px;
@@ -1172,6 +1198,13 @@ main, section
 /* small */
 @media (max-width: 560px) 
 {
+    .contact-main .contact-right img 
+    {
+        width: min(220px, 80vw); 
+        height: auto;
+        margin: 0 auto;
+        display:flex;
+    }
     #toggle-nav 
     {
         display: block;
@@ -1244,6 +1277,28 @@ main, section
         padding: 0 16px 24px;
     }
 
+    #left .pop .image,
+    #right .pop .image {
+    width: 200px;
+    height: 200px;
+    }
+
+    #left .pop img,
+    #right .pop img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    }
+
+    .catalog .pop img {
+    max-width: 90vw;
+    max-height: 200px;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    }
+
+
     #deals-left .grid, #deals-right .grid 
     {
         grid-template-columns: 1fr;
@@ -1295,6 +1350,24 @@ main, section
     {
         padding: 14px 12px;
         font-size: 16px;
+    }
+
+    .featured-content img {
+        max-width: 400px;   
+        height: auto;
+        }
+
+    .featured-deal h2 {
+        font-size: 24px;   
+        margin-bottom: 12px;
+    }
+
+    .deal-info h3 {
+        font-size: 20px;
+    }
+
+    .deal-info p {
+        font-size: 14px;
     }
 }
 
@@ -1378,7 +1451,7 @@ main, section
 }
 .contact-info h3:first-child 
 {
-    margin-top: -150px;
+    margin-top: 0px;
 } 
 
 img
