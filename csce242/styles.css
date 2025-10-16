@@ -229,6 +229,21 @@ img
     background: var(--main-color);
 }
 
+.assignment-ten
+{
+    width:25%;
+    margin:20px;
+    padding:15px 15px;
+    background-color: white;
+    border-radius: 10%;
+    background: var(--main-color);
+}
+
+#assign-ten-links p:hover
+{
+    text-decoration: underline;
+}
+
 /* Projects Section */
 
 .projects
